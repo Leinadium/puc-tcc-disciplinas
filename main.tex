@@ -1,0 +1,210 @@
+%% -*- coding: utf-8; -*-
+
+% Use 'digital' option to enable back references. This option is recommended for digital pdf version
+%\documentclass[phd,american,digital]{thesispuc}%english thesis
+%\documentclass[mscr,american]{thesispuc}%english dissertation
+%\documentclass[phd,brazilian]{thesispuc}%tese em portugês
+\documentclass[msc,brazilian]{thesispuc}%disseretação em portuguŝ
+
+
+%%%
+%%% Additional Packages
+%%%
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage[%
+    dvipsnames,
+    svgnames,
+    x11names,
+    fixpdftex,
+    table
+]{xcolor}
+\usepackage{numprint}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{amssymb}
+% ABNT reference style package. The current style is the alphabetical order, if you need
+% change to citation order, change in the line above 'alf' to 'num', also at the end replace
+% bibliographystyle with the commented version.
+\usepackage[num]{abntex2cite}
+%\usepackage{tikz}
+%\usepackage[linesnumbered, ruled, vlined]{algorithm2e}
+%\usepackage{pgfplots,pgfplotstable} 
+%\usepackage{array}
+
+%% numprint 
+\npthousandsep{.}
+\npdecimalsign{,}
+
+%% ThesisPUC option
+%\tablesmode{fig} %% [nada, fig, tab ou figtab]
+%\algoritmsmode{none} %% [none ou use] %% Default is [use]
+%\codesmode{none} %% [none ou use] %% Default is [use]
+%\abreviationsmode{none} %% [none ou use] %% Default is [use]
+\tablesmode{none}
+\algorithmsmode{none}
+\codesmode{none}
+\abreviationsmode{none}
+
+% \makeatletter  \renewcommand\@biblabel[1]{#1}  \makeatother
+
+%%%
+%%% Counters
+%%%
+
+%% uncomment and change for other depth values
+\setcounter{tocdepth}{1}
+%\setcounter{lofdepth}{3}
+%\setcounter{lotdepth}{3}
+%\setcounter{secnumdepth}{3}
+
+%%%
+%%% Misc.
+%%%
+
+\usecolour{true}
+%% \graphicspath{ {./figuras/} }
+%% https://www.overleaf.com/learn/latex/Inserting_Images
+\citebrackets[]
+
+
+%%%
+%%% Titulos
+%%%
+
+\autor{Daniel Schreiber Guimarães}
+\autorR{Guimarães, Daniel Schreiber}
+
+\advisor{Marcos Viana Villas}{Prof.}
+\advisorR{Villas, Marcos Viana}
+% If the advisor's department is different from author's department, uncomment the next line and type the correct name and acronym of advisor's institution.
+%\advisorInst{institution name}{acronym}
+
+%\coadvisor{Otávio da Fonseca Martins Gomes}{Dr.}
+%\coadvisorR{da Fonseca Martins Gomes, Otávio}
+%\coadvisorInst{Centro de Tecnologia Mineral}{CETEM/MCTI}
+
+\title{Sistema de recomendação de disciplinas para matrícula de um aluno da PUC-Rio}
+
+%%\subtitulo{Aqui vai o subtitulo caso precise}
+
+\day{02}
+\month{Maio}
+\year{2023}
+
+\city{Rio de Janeiro}
+\CDD{004} 
+\department{Informática}
+\program{Engenharia da Computação}
+\school{Engenharia da Computação}
+\university{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+
+
+%%%
+%%% Jury
+%%%
+
+\jury{%
+  \jurymember{Alberto Barbosa Raposo}{Prof.}
+    {Departamento de Informática}{PUC-Rio}
+  \jurymember{Waldemar Celes Filho}{Prof.}
+    {Departamento de Informática}{PUC-Rio}
+}
+
+
+%%%
+%%% Personal Resume
+%%%
+
+\resume{%
+% If it fit in one line use this command:
+\makebox[\textwidth][s]{Graduando em Engenharia da Computação na PUC - Rio}%
+% If not just type your resume without any special command 
+}
+
+%%%
+%%% Acknowledgment (REMINDER TO SCHOLARSHIP STUDENTS. Do not forget to thank the agencies that supported your work.)
+%%% REMOVIDO POR DANIEL
+%%%
+% \acknowledgment{%
+% \noindent To my adviser Professor Marcelo Gattass for the stimulus and partnership
+% to carry out this work.
+% \bigskip
+
+% \noindent To CNPq and PUC-Rio, for the aids granted, without which this work does not
+% could have been accomplished.
+% \bigskip
+% }
+
+
+%%%
+%%% Catalog prekeywords
+%%%
+
+\catalogprekeywords{%
+  \catalogprekey{Informática}%
+}
+
+%%%
+%%% Keywords - Don't use % at the end of /key dfinition
+%%%
+
+\keywords{%
+  \key{Recomendação}
+  \key{Disciplinas}
+  % \key{Imagens de Exames médicos}
+  % \key{Vizinhança adaptativa}
+}
+
+\keywordsuk{%
+  \key{Recommendation}
+  \key{Courses}
+}
+
+
+%%%
+%%% Abstract
+%%%
+
+\abstract{%
+Esse resumo ainda será preenchido.
+}
+
+\abstractuk{%
+This abstract will be filled.
+}
+
+
+%%%
+%%% Dedication
+%%%
+
+\dedication{%
+  Para os meus pais, por\\todo o seu suporte e encorajamento.
+}
+
+%%%
+%%% Epigraph (removido manualmente pelo thesispuc.cls)
+%%%
+
+% \epigraph{%
+% }
+% \epigraphauthor{Wassily Kandinsky}
+% \epigraphbook{Regards sur le passé}
+
+
+\begin{document}
+  \input{1-introducao}
+  \input{2-situacao-atual}
+  \input{3-proposta}
+  \input{4-plano-acao}
+  %% ...
+  \arial
+  \bibliographystyle{abnt-num} % \bibliographystyle{abnt-alf}
+  \bibliography{main} 
+\end{document}
