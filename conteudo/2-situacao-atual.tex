@@ -19,8 +19,7 @@ O microhorario\footnote{https://www.puc-rio.br/microhorario} é um serviço disp
 
 Para consultar a grade recomendada e os pré-requisitos, o aluno precisa acessar um documento\footnote{http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2023/01/\\Grade\_Eng\_comp\_2023.pdf} presente na página do departamento ou acessar o currículo disponibilizado na página da universidade. A grade recomendada possui os nomes das disciplinas e seus pré-requisitos, mas não contém a disponibilidade do próximo período.
 
-Além disso, as disciplinas eletivas que o departamento oferece durante o semestre são anunciadas em diferentes veículos de comunicação, como e-mail, página da coordenação do curso, ou folhetos em corredores do departamento. Não há uma distribuição centralizada das ofertas de disciplinas eletivas.
-
+Além disso, as disciplinas eletivas que o departamento oferece durante o semestre são anunciadas em diferentes veículos de comunicação, como e-mail, página da coordenação do curso, ou folhetos em corredores do departamento. Não há uma distribuição centralizada das ofertas de disciplinas eletivas, portanto o aluno pode não saber aonde procurar essas ofertas, e perder boas oportunidades por desconhecer o anúncio da disciplina eletiva.
 \section{Processo de matrícula}
 %% explicar periodo de matricula abaixo (feito)
 
@@ -28,11 +27,11 @@ A matrícula na PUC-Rio é um processo que dura vários dias. A universidade div
 
 Portanto, é comum que um aluno crie formas de planejamento próprias para conseguir organizar todo o fluxo de dependências, anotar as disciplinas que estão sendo oferecidas, assim como suas turmas e professores. Esses dados precisam estar em constante atualização durante o período de matrícula, conforme as vagas vão sendo preenchidas e a disponibilização de novas turmas ou disciplinas são anunciadas. Este é um processo que maximiza a qualidade da sua grade horária, mas demanda muito esforço e tempo. 
 
-A universidade disponibiliza alguns por um curto período antes do processo de matrícula um simulador de matrícula. A interface do simulador é a mesma da matrícula, como pode ser observado na figura \ref{fig:simulador}, 
-afim de o aluno poder simular a criação da sua grade de disciplinas para o próximo semestre. O simulador está com os dados das disciplinas atualizados conforme o microhorario, e os disponibiliza de três formas diferentes: buscas por disciplinas que faltam cursar no currículo do aluno, buscar por nomes de disciplinas e buscar por horários das turmas das 
+A universidade disponibiliza um simulador de matrícula por um curto período antes do processo de matrícula em si. A interface do simulador é a mesma da matrícula, como pode ser observado na figura \ref{fig:simulador}, 
+afim de o aluno poder simular a criação da sua grade de disciplinas para o próximo semestre. O simulador apresenta os dados das disciplinas atualizados conforme o microhorario, e os disponibiliza de três formas diferentes: buscas por disciplinas que faltam cursar no currículo do aluno, buscar por nomes de disciplinas e buscar por horários das turmas das 
 disciplinas.\cite{doc-matricula}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \begin{center}
   \includegraphics[width=250pt]{figuras/simulador}
   \caption{Interface do simulador}
@@ -47,10 +46,10 @@ A escolha de disciplinas é um problema comum em universidades que possuem algum
 Há estudos que utilizam históricos escolares dos alunos para gerar modelos de previsão de notas.\cite{rani-machine-learning,nguyen-learning-outcome,adak-fuzzy} Nesse caso, o objetivo do modelo é tentar prever quais disciplinas o aluno tem a maior chance de obter uma boa nota, mas não necessariamente prever quais delas mais combina com o aluno.\cite{rani-machine-learning,nguyen-learning-outcome}
 
 A escolha de disciplinas eletivas também é uma preocupação presente nas universidades. Na PUC-Rio e em outras universidades, os currículos de graduação solicitam créditos de disciplinas eletivas, seja dentro do departamento da graduação do aluno ou não. O sistema do estudo de Adak et al.\cite{adak-fuzzy} recomenda disciplinas dentro de um departamento que parecem se relacionar com o histórico escolar do aluno, mas excluem disciplinas fora do departamento.
-Já o sistema de Xu et al.\cite{xu-personalizado} recomenda uma sequência de disciplinas eletivas que maximem a sua nota e não aumentem o tempo de conclusão da graduação do aluno, levando em conta dados históricos do aluno e a disponibilidade atual das disciplinas. Por último, o estudo Adak \& Ercan\cite{adak-svm} utiliza um algoritmo SVM para recomendar eletivas que mais se assemelham ao aluno, usando seus dados históricos.
+Já o sistema de Xu et al.\cite{xu-personalizado} recomenda uma sequência de disciplinas eletivas que maximem a sua nota e não aumentem o tempo de conclusão da graduação do aluno, levando em conta dados históricos do aluno e a disponibilidade atual das disciplinas. 
+Por último, o estudo de Adak \& Ercan\cite{adak-svm} utiliza dois algoritmos de inteligência artificial de aprendizado supervisionado, support vector machine (SVM) e árvores de decisão, para recomendar eletivas que mais se assemelham ao aluno, utilizando dados históricos do aluno tanto para o treinamento dos modelos de algoritmo como para a recomendação.
 
-O comum nos estudos é a tentativa de maximizar a nota média do aluno utilizando os dados históricos de alunos da universidade para treinar modelos de inteligência artificial.
-\cite{rani-machine-learning,nguyen-learning-outcome,adak-fuzzy,adak-svm} Porém, o foco específico nos resultados pode ocultar oportunidades de disciplinas que o aluno poderia se interessar, mesmo não tendo um bom rendimento num momento inicial.
+O comum nos estudos é a tentativa de maximizar a nota média do aluno utilizando os dados históricos de alunos da universidade para treinar modelos de inteligência artificial.\cite{rani-machine-learning,nguyen-learning-outcome,adak-fuzzy,adak-svm} Porém, o foco específico nos resultados pode ocultar oportunidades de disciplinas que o aluno poderia se interessar.
 
 % Early smoothing methods tried to minimize... In the figure \ref{subfig:pictures/image01.png} we see...
 
