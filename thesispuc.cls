@@ -1558,7 +1558,7 @@
   \fi
   %% \puc@showacknowledgment%   %% ALTERACAO %%
   \if@brazilianlanguage
-    \puc@showabstractuk%
+    \puc@showabstractuk%        %% PRECISA MESMO? %%
     \puc@showabstract%
     \selectlanguage{brazilian}%
   \else
