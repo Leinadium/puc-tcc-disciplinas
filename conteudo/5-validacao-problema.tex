@@ -1,7 +1,7 @@
 % -*- coding: utf-8; -*-
 
 \chapter{Validação do problema}
-\label{cha:Valida\c{c}\~{a}o do problema}
+\label{cha:validacao-problema}
 
 A validação do problema foi efetuada por meio de entrevistas com alunos de graduação do departamento de informática. As entrevistas tinham como objetivo obter as opiniões de diferentes alunos em diferentes períodos de suas graduações quanto as suas preferências ao realizar as suas matrículas. As opiniões são essenciais para planejar um algoritmo de recomendação que abrange as preferênciasdo máximo de estudantes.
 
@@ -12,8 +12,8 @@ Os entrevistados são alunos de graduação dos cursos do departamento de inform
 \section{Perguntas realizadas}
 A seguir estão as seis perguntas realizadas para cada entrevistado do departamento de informática, assim como uma explicação do motivo da pergunta ser realizada.
 
-% REMOVER A EXPLICAÇÃO DA LISTA
-% E COLOCAR OS EXEMPLOS NA 5.3
+% REMOVER A EXPLICAÇÃO DA LISTA (FEITO)
+% E COLOCAR OS EXEMPLOS NA 5.3  (FEITO)
 
 
 \begin{enumerate}
@@ -49,6 +49,7 @@ Ao final da entrevista, também foi oferecida a oportunidade de fornecer alguma 
 \section{Resultados das entrevistas}
 
 \subsection{Dados básicos dos estudantes (Perguntas 1 e 2)}
+\label{sec:dados-basicos-estudantes}
 
 Dos onze entrevistados, cinco eram alunos de ciência de computação e os outros seis eram de engenharia de computação. 5 dos 6 alunos entrevistados de engenharia de computação já haviam cursado mais da metade do curso (já cursou 5 dos 10 semestres recomendados), e 3 dos 5 alunos entrevistados de ciência de computação já haviam cursado mais da metade do curso (já cursou 4 dos 8 semestres recomendados). Além disso, dos onze alunos, nove eram homens e dois eram mulheres.
 
@@ -75,7 +76,7 @@ Como pode ser observado na resposta fornecida acima, as respostas podem variar b
 
 \begin{table}[!ht]
     \begin{center}
-        \begin{tabular}{ l|c|c|c|c|c } 
+        \begin{tabular}{ l||c|c|c|c|c| } 
             & Conteúdo & Professor & Avaliação & Horário & Opinião \\ 
             \hline 
             \textit{Entrevistado 1 } & 3 & - & - & 1 & 2 \\     % miguel angelus
@@ -102,7 +103,7 @@ Para gerar uma comparação dos critérios, foi dado um peso para cada grau de i
 
 \begin{table}[!ht]
     \begin{center}
-        \begin{tabular}{ r||c|c|c|c|c|c } 
+        \begin{tabular}{ r||c|c|c|c|c|c| } 
             \textit{Grau} & 1 & 2 & 3 & 4 & 5 & - \\
             \hline 
             \textit{Peso} & 5 & 4 & 3 & 2 & 1 & 0 \\
@@ -116,7 +117,7 @@ Ao substituir os pesos da Tabela \ref{tab:grau-peso} na Tabela \ref{tab:entrevis
 
 \begin{table}[!ht]
     \begin{center}
-        \begin{tabular}{ l|c|c|c|c|c } 
+        \begin{tabular}{ l||c|c|c|c|c| } 
             & Conteúdo & Professor & Avaliação & Horário & Opinião \\ 
             \hline 
             \textit{Entrevistado 1 } & 3 & 0 & 0 & 5 & 4 \\     % miguel angelus
@@ -143,6 +144,7 @@ Observando a Tabela \ref{tab:entrevista-criterios-peso}, as somas dos pesos indi
 \textit{Conteúdo da disciplina}, \textit{Horário da disciplina}, \textit{Opinião de amigos}, \textit{Professor} e \textit{Método de avaliação}.
 
 \subsection{Disciplinas eletivas (Perguntas 5 e 6)}
+\label{sec:disciplinas-eletivas}
 
 Dos onze entrevistados, nove citaram a utilização do microhorário para coletar as disciplinas eletivas do período. Os outros dois dependem mais de recomendação de amigos. Três entrevistados procuram por uma listagem oficial de disciplinas eletivas oferecidas pelo departamento para o próximo período, mas nem sempre encontram essa listagem oficial.
 

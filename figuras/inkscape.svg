@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.8079686"
-     inkscape:cx="-585.6547"
-     inkscape:cy="484.51397"
+     inkscape:cx="-575.68308"
+     inkscape:cy="466.7075"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -391,11 +391,14 @@
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84455;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="rect1734-3-9-15"
-       width="11.769512"
-       height="2.5383031"
-       x="-170.55653"
-       y="115.57928"
-       ry="0.17815593" />
+       width="13.223997"
+       height="2.4952605"
+       x="-172.03255"
+       y="115.6008"
+       ry="0.1751349"
+       inkscape:export-filename="cronograma-atualizado.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84455;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="rect1734-3-9"
@@ -407,11 +410,11 @@
     <rect
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84455;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="rect1734-3-9-1"
-       width="11.803408"
-       height="2.5372596"
-       x="-183.07455"
-       y="110.61046"
-       ry="0.17808267" />
+       width="10.226565"
+       height="2.5878892"
+       x="-183.09987"
+       y="110.58514"
+       ry="0.18163621" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
