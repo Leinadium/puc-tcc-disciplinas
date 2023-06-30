@@ -1077,7 +1077,7 @@
       \if@pucphd
         Tese de Doutorado%
       \else
-        Relatório de Projeto Final%
+        Relatório de Projeto Final I%     %% MODIFICADO 
       \fi
       }}%
   \vspace*{\stretch{1.5}}%
