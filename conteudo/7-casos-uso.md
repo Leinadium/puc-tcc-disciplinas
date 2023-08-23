@@ -89,7 +89,7 @@
 
 **Pré condições**: O ator deve estar na tela de edição de grade horária.
 
-**Trigger**: O ator seleciona uma disciplina da área de recomendação.
+**Trigger**: Não se aplica
 
 **Fluxo principal**:
 
