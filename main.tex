@@ -36,6 +36,10 @@
 %\usepackage{pgfplots,pgfplotstable} 
 %\usepackage{array}
 
+% ADICIONADAS POR DANIEL
+\usepackage{multirow}
+\usepackage{longtable}
+
 %% numprint 
 \npthousandsep{.}
 \npdecimalsign{,}
@@ -73,6 +77,8 @@
 %% https://www.overleaf.com/learn/latex/Inserting_Images
 \citebrackets[]
 
+\renewcommand{\arraystretch}{1.5}
+
 
 %%%
 %%% Titulos
@@ -95,8 +101,8 @@
 
 %%\subtitulo{Aqui vai o subtitulo caso precise}
 
-\day{30}
-\month{Junho}
+\day{24}
+\month{Novembro}
 \year{2023}
 
 \city{Rio de Janeiro}
@@ -208,6 +214,7 @@ This abstract will be filled.
   \input{conteudo/4-plano-acao}
   \input{conteudo/5-validacao-problema}
   \input{conteudo/6-requisitos}
+  \input{conteudo/7-casos-uso}
   % :::a fazer:::
   % casos de uso
   % diagramas
