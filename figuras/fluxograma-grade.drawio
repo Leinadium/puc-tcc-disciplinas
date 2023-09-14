@@ -1,0 +1,306 @@
+<mxfile host="app.diagrams.net" modified="2023-09-13T23:41:04.139Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0" etag="k6gpT5I5Jf5SOkgRWdvP" version="21.7.4" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="2876" dy="1066" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Interface da grade horária&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;Conteúdo:&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="69" y="30" width="690" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-12" target="nHXGD3M_L8ZKCfgyZiop-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Tela de seleção de turmas disponíveis" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="122.5" y="210" width="127.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-0" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="186" y="170" />
+              <mxPoint x="186" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-0" value="&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Lista de disciplinas 1:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Disciplinas que faltam cursar&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="80" y="100" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.997;entryY=0.553;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-1" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="365" y="240" />
+              <mxPoint x="253" y="240" />
+              <mxPoint x="253" y="238" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-1" value="&lt;font face=&quot;Georgia&quot;&gt;Lista de disciplinas 2: Disciplinas recomendadas&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="280" y="100" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-2" target="nHXGD3M_L8ZKCfgyZiop-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-2" value="&lt;font face=&quot;Georgia&quot;&gt;Campo de pesquisa&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="484" y="100" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-3" target="nHXGD3M_L8ZKCfgyZiop-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-3" value="&lt;font face=&quot;Georgia&quot;&gt;Botão de salvar e/ou compartilhar&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="630" y="100" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-6" target="nHXGD3M_L8ZKCfgyZiop-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-6" value="O sistema atualiza a grade horária" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="122.5" y="300" width="127.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-7" value="O sistema atualiza as recomendações" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="122.5" y="420" width="127.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-10" value="A lista de disciplinas 1 exibe disciplinas usando como filtro o texto digitado" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="294" y="420" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-11" target="nHXGD3M_L8ZKCfgyZiop-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-11" target="nHXGD3M_L8ZKCfgyZiop-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-11" value="&lt;div&gt;O campo&amp;nbsp;&lt;/div&gt;&lt;div&gt;possui algum texto?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="484" y="310" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-13" target="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="669" y="540" />
+              <mxPoint x="20" y="540" />
+              <mxPoint x="20" y="95" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-13" value="&lt;div&gt;A lista de disciplinas 1&amp;nbsp;&lt;/div&gt;&lt;div&gt;volta a exibir disciplinas que&amp;nbsp;&lt;/div&gt;&lt;div&gt;faltam cursar&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="584" y="420" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.462;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nHXGD3M_L8ZKCfgyZiop-14" target="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="250" />
+              <mxPoint x="800" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-14" value="&lt;div&gt;O sistema gera um link de compartilhamento&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="605" y="210" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-28" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário seleciona uma&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;das disciplinas&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="180" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-29" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário seleciona&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;uma &lt;/font&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;das turmas&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="69" y="260" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-30" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário cancela&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;a operação&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="27.5" y="195" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-31" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário altera o texto no campo de pesquisa&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="411" y="210" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-32" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário pressiona o botão&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="570" y="160" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-33" value="&lt;font face=&quot;Georgia&quot;&gt;Sim&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="500" y="430" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-34" value="&lt;font face=&quot;Georgia&quot;&gt;Não&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="534" y="430" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-35" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="WIyWlLk6GJQsqaUBKTNV-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="235" as="sourcePoint" />
+            <mxPoint x="110" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-38" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="nHXGD3M_L8ZKCfgyZiop-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="186" y="540" as="sourcePoint" />
+            <mxPoint x="200" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nHXGD3M_L8ZKCfgyZiop-39" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="388.71000000000004" y="540" as="sourcePoint" />
+            <mxPoint x="388.71000000000004" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-0" value="&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Interface da grade horária&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;Conteúdo:&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Georgia&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="54.5" y="760" width="211" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-2" target="f-3xaapFvL57nRGMayLu-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="363.75" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-2" value="Tela de seleção de turmas disponíveis" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="300" y="905" width="127.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-4" target="f-3xaapFvL57nRGMayLu-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="875" />
+              <mxPoint x="250" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-4" value="&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Lista de disciplinas 1:&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Disciplinas que faltam cursar&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="850" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-6" target="f-3xaapFvL57nRGMayLu-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="1005" />
+              <mxPoint x="250" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-6" value="&lt;font face=&quot;Georgia&quot;&gt;Lista de disciplinas 2: Disciplinas recomendadas&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="980" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-8" target="f-3xaapFvL57nRGMayLu-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-8" value="&lt;font face=&quot;Georgia&quot;&gt;Campo de pesquisa&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="1085" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-10" target="f-3xaapFvL57nRGMayLu-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-10" value="&lt;font face=&quot;Georgia&quot;&gt;Botão de salvar e/ou compartilhar&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="1240" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=1.005;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-12" target="f-3xaapFvL57nRGMayLu-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="930" />
+              <mxPoint x="660" y="830" />
+              <mxPoint x="267" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-12" value="&lt;div&gt;O sistema atualiza&amp;nbsp;&lt;/div&gt;&lt;div&gt;a grade horária&lt;/div&gt;&lt;div&gt;e as recomendações&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="450" y="890" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="1050" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-14" value="A lista de disciplinas 1 exibe disciplinas usando como filtro o texto digitado" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="1130" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-17" target="f-3xaapFvL57nRGMayLu-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-17" target="f-3xaapFvL57nRGMayLu-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-17" value="&lt;div&gt;O campo&amp;nbsp;&lt;/div&gt;&lt;div&gt;possui algum texto?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="300" y="1060" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="930" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-19" value="&lt;div&gt;A lista de disciplinas 1&amp;nbsp;&lt;/div&gt;&lt;div&gt;volta a exibir disciplinas que&amp;nbsp;&lt;/div&gt;&lt;div&gt;faltam cursar&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="405" y="1010" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="1170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="1265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-21" value="&lt;div&gt;O sistema gera um link de compartilhamento&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="1225" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-22" value="&lt;div style=&quot;font-size: 13px;&quot; align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;Legenda&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;1: O usuário seleciona uma das disciplinas.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;2: O usuário cancela a operação.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;3: O usuário seleciona uma das turmas.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;4: O usuário altera o texto no campo de pesquisa.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;5: O usuário pressiona o botão.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;6: O usuário pressiona o botão.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot; face=&quot;Georgia&quot; color=&quot;#666666&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="208" y="1430" width="326" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-23" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário seleciona&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;uma &lt;/font&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;das turmas&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-176" y="760" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-24" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário cancela&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;a operação&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-162.5" y="675" width="95" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-25" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário altera o texto no campo de pesquisa&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-175" y="790" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-26" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;1&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="275" y="897.5" width="10" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-27" value="&lt;font face=&quot;Georgia&quot;&gt;Sim&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="1169" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-28" value="&lt;font face=&quot;Georgia&quot;&gt;Não&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="350" y="1020" width="34" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-32" target="f-3xaapFvL57nRGMayLu-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-32" value="&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;Botão de preencher&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Georgia&quot;&gt;a grade automaticamente&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="1340" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="f-3xaapFvL57nRGMayLu-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="1264" as="targetPoint" />
+            <mxPoint x="600" y="1360" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="660" y="1365" />
+              <mxPoint x="660" y="1264" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-33" value="&lt;div&gt;O sistema preenche a grade&amp;nbsp;&lt;/div&gt;&lt;div&gt;atual com as disciplinas recomendadas&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=25;fontFamily=Georgia;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="1325" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-34" value="&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;Usuário seleciona&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#666666&quot; face=&quot;Georgia&quot;&gt;uma das disciplinas&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-185" y="920" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-58" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;2&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="349" y="850" width="10" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-59" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="435" y="897.5" width="10" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-60" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;4&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="1085" width="10" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-61" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;5&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="1240" width="10" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f-3xaapFvL57nRGMayLu-62" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;6&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="1340" width="10" height="22.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
