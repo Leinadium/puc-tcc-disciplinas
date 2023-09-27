@@ -29,7 +29,12 @@ A imagem \ref{fig:modelo-logico} exibe o diagrama lógico dos dados com base no 
 
 \section{Dicionário de dados}
 
-O dicionário de dados possui a função de categorizar os dados. Ele é uma coleção de metadados do modelo físico. O dicionario de dados do sistema está disponível na tabela \ref{tab:dicionario-dados}. Nele está representado todas as colunas observadas no diagrama lógico da figura \ref{fig:modelo-logico}. O tipo do dado é unico para o nome da coluna, o que significa que o mesmo nome da coluna em duas tabelas diferentes representa o mesmo tipo de dado. Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela \textit{grades}, \textit{usuarios}, \textit{avaliacoes-disciplina} e \textit{avaliacoes-professor}.
+O dicionário de dados possui a função de categorizar os dados. 
+Ele é uma coleção de metadados do modelo físico. 
+O dicionario de dados do sistema está disponível na tabela \ref{tab:dicionario-dados}. 
+Nele está representado todas as colunas observadas no diagrama lógico da figura \ref{fig:modelo-logico}.
+O tipo do dado é unico para o nome da coluna, o que significa que o mesmo nome da coluna em duas tabelas diferentes representa o mesmo tipo de dado. 
+Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela \textit{grades}, \textit{usuarios}, \textit{avaliacoes-disciplina} e \textit{avaliacoes-professor}.
 
 \begin{longtable}{ | >{\raggedright}m{0.2\columnwidth} | >{\raggedright}m{0.4\columnwidth} | >{\raggedright}m{0.1\columnwidth} | >{\raggedright}m{0.2\columnwidth} | }
     
@@ -45,7 +50,7 @@ O dicionário de dados possui a função de categorizar os dados. Ele é uma col
     cod-curriculo & Identificador do currículo. Exemplo: "eng19.1" & string & Sem restrição.\tabularnewline\hline
     cod-depto & Abreviação de três letras do departamento, conforme disponibilizado no microhorario. Exemplo: "ENG". & string & Três letras maiúsculas.\tabularnewline\hline
     cod-disciplina & Código da disciplina. Exemplo: "INF1011". & string & Abreviação de um departamento (três letras maiúsculas) seguida de 4 números.\tabularnewline\hline
-    cod-disc-depen & Código da disciplina que é algum pré-requisito de outra disciplina. & string & Mesmo do cod-disciplina.\tabularnewline\hline
+    cod-disc-depen & Códigos da disciplinas que fazem parte de um grupo de pré-requisitos de outra disciplina. & Array de strings & Mesmo do cod-disciplina.\tabularnewline\hline
     cod-disc-orig & Código da disciplina que possui algum pré-requisito. & string & Mesmo do cod-disciplina.\tabularnewline\hline
     cod-grade & Código da grade, gerado ao salvar uma nova grade. & string & 8 caracteres em formato base64.\tabularnewline\hline
     cod-professor & Código do professor, gerado ao inserir o professor no sistema. & string & Sem restrição.\tabularnewline\hline
