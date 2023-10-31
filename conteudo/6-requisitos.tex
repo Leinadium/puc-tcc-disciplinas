@@ -18,38 +18,20 @@ A lista de requisitos do algoritmo está disponível na tabela \ref{tab:req-algo
         \begin{tabular}{ | m{0.1\textwidth} | p{0.8\textwidth} | }  
             \hline
             \textbf{RF01} & O algoritmo deve receber as disciplinas e turmas oferecidas no próximo semestre conforme o microhorário.\tabularnewline\hline
-            \textbf{RF02} & O algoritmo deve receber a grade curricular do curso que o aluno está cursando.\tabularnewline\hline
+            \textbf{RF02} & O algoritmo deve receber opcionalmente a grade curricular do curso que o aluno está cursando.\tabularnewline\hline
             \textbf{RF03} & O algoritmo deve receber as avaliações das disciplinas e professores fornecidas pelos usuários do sistema.\tabularnewline\hline
             \textbf{RF04} & O algoritmo deve receber opcionalmente o histórico escolar do aluno.\tabularnewline\hline
             \textbf{RF05} & O algoritmo deve receber disciplinas já selecionadas pelo aluno.\tabularnewline\hline
-            \textbf{RF06} & O algoritmo deve retornar recomendações de turmas com base nas entradas fornecidas (em que uma turma representa uma combinação de disciplina, professor e horário).\tabularnewline\hline
+            \textbf{RF06} & O algoritmo deve retornar recomendações de disciplinas com base nas entradas fornecidas.\tabularnewline\hline
             
-            
-            \textbf{RNF1} & O algoritmo deve retornar entre 0 a 3 recomendações.\tabularnewline\hline
-            \textbf{RNF2} & O algoritmo deve retornar as recomendações em menos de 3 segundos.\tabularnewline\hline
-            \textbf{RNF3} & O algoritmo deve ser determinístico, ou seja, retorna as mesmas recomendações para as mesmas entradas.\tabularnewline\hline
+            \textbf{RNF1} & O algoritmo deve retornar as recomendações em menos de 3 segundos.\tabularnewline\hline
+            \textbf{RNF2} & O algoritmo deve ser determinístico, ou seja, retorna as mesmas recomendações para as mesmas entradas.\tabularnewline\hline
         \end{tabular}
     \end{center}
     \caption{Requisitos do algoritmo}
     
     \label{tab:req-algoritmo}
 \end{table}
-
-%% ESTILO ORIGINAL: ERA UMA LISTA
-% \begin{enumerate}
-%     \item[\textbf{RF01}] O algoritmo deve receber as disciplinas e turmas oferecidas no próximo semestre conforme o microhorário.
-%     \item[\textbf{RF02}] O algoritmo deve receber a grade curricular do curso que o aluno está cursando.
-%     \item[\textbf{RF03}] O algoritmo deve receber as avaliações das disciplinas e professores fornecidas pelos usuários do sistema.
-%     \item[\textbf{RF04}] O algoritmo deve receber opcionalmente o histórico escolar do aluno.
-%     \item[\textbf{RF05}] O algoritmo deve receber disciplinas já selecionadas pelo aluno.
-%     \item[\textbf{RF06}] O algoritmo deve retornar recomendações de turmas com base nas entradas fornecidas (em que uma turma representa uma combinação de disciplina, professor e horário).
-
-%     \item[\textbf{RFN1}] O algoritmo deve retornar entre 0 a 3 recomendações.
-%     \item[\textbf{RFN2}] O algoritmo deve retornar as recomendações em menos de 3 segundos.
-%     \item[\textbf{RFN3}] O algoritmo deve ser determinístico, ou seja, retorna as mesmas recomendações para as mesmas entradas.
-
-%     \label{lis:pre-req-algoritmo}
-% \end{enumerate}
 
 \section{Do sistema}
 
@@ -62,24 +44,19 @@ Os requisitos do sistema estão disponíveis na tabela \ref{tab:req-sistema}.
             \hline
             \textbf{RF07} & O sistema deve permitir que o usuário crie uma grade horária para o próximo período.\tabularnewline\hline
             \textbf{RF08} & O sistema deve permitir que o usuário submita seu histórico escolar.\tabularnewline\hline
-            \textbf{RF09} & O sistema deve permitir que o usuário selecione seu curso e currículo.\tabularnewline\hline
-            \textbf{RF10} & O sistema deve permitir que o usuário selecione turmas das disciplinas para compor sua grade horária.\tabularnewline\hline
-            \textbf{RF11} & O sistema deve permitir que o usuário armazene a sua grade horária finalizada.\tabularnewline\hline
-            \textbf{RF12} & O sistema deve permitir que o usuário compartilhe a sua grade horária finalizada. \tabularnewline\hline
-            \textbf{RF13} & O sistema deve permitir que o usuário recupere uma grade horária montada a partir de um link compartilhado.\tabularnewline\hline
+            \textbf{RF09} & O sistema deve permitir que o usuário selecione turmas das disciplinas para compor sua grade horária.\tabularnewline\hline
+            \textbf{RF10} & O sistema deve permitir que o usuário armazene a sua grade horária finalizada.\tabularnewline\hline
+            \textbf{RF11} & O sistema deve permitir que o usuário compartilhe a sua grade horária finalizada. \tabularnewline\hline
+            \textbf{RF12} & O sistema deve permitir que o usuário recupere uma grade horária montada a partir de um link compartilhado.\tabularnewline\hline
             
+            \textbf{RF13} & O sistema deve permitir que o usuário inicie uma sessão autenticada utilizando sua matrícula.\tabularnewline\hline
+            \textbf{RF14} & O sistema deve permitir que o usuário finalize uma sessão autenticada.\tabularnewline\hline
+            \textbf{RF15} & O sistema deve permitir que o usuário avalie uma disciplina.\tabularnewline\hline
+            \textbf{RF16} & O sistema deve permitir que o usuário avalie um professor de uma disciplina.\tabularnewline\hline
+            \textbf{RF17} & O sistema deve permitir que o usuário altere uma avaliação feita anteriormente.\tabularnewline\hline
 
-            \textbf{RF14} & O sistema deve permitir que o usuário inicie uma sessão autenticada utilizando sua matrícula.\tabularnewline\hline
-            \textbf{RF15} & O sistema deve permitir que o usuário finalize uma sessão autenticada.\tabularnewline\hline
-            \textbf{RF16} & O sistema deve permitir que o usuário avalie uma disciplina já cursada pelo usuário.\tabularnewline\hline
-            \textbf{RF17} & O sistema deve permitir que o usuário avalie um professor de uma disciplina já cursada pelo usuário.\tabularnewline\hline
-            \textbf{RF18} & O sistema deve permitir que o usuário altere uma avaliação feita anteriormente.\tabularnewline\hline
-
-
-            \textbf{RNF4} & O sistema deve estar disponível publicamente aos alunos da universidade.\tabularnewline\hline
-            \textbf{RNF5} & O sistema deve funcionar em dispositivos móveis.\tabularnewline\hline
-            \textbf{RNF6} & O sistema deve armazenar as avaliações de maneira anônima.\tabularnewline\hline
-            \textbf{RNF7} & O sistema deve suportar pelo menos 50 usuários simultâneos.\tabularnewline\hline
+            \textbf{RNF3} & O sistema deve estar disponível publicamente aos alunos da universidade.\tabularnewline\hline
+            \textbf{RNF4} & O sistema deve suportar pelo menos 50 usuários simultâneos.\tabularnewline\hline
         
         \end{tabular}
     \end{center}
@@ -87,25 +64,3 @@ Os requisitos do sistema estão disponíveis na tabela \ref{tab:req-sistema}.
     
     \label{tab:req-sistema}
 \end{table}
-
-%% LISTA ORIGINAL DOS REQUISITOS DO SISTEMA
-% \begin{enumerate}
-%     % requisitos funcionais da montagem da grade horária
-%     \item[\textbf{RF01}] O sistema deve permitir que o usuário crie uma grade horária para o próximo período.
-%     \item[\textbf{RF02}] O sistema deve permitir que o usuário submita seu histórico escolar.
-%     \item[\textbf{RF03}] O sistema deve permitir que o usuário selecione seu curso e currículo.
-%     \item[\textbf{RF04}] O sistema deve permitir que o usuário selecione turmas das disciplinas para compor sua grade horária.
-%     \item[\textbf{RF05}] O sistema deve permitir que o usuário armazene a sua grade horária finalizada.
-%     \item[\textbf{RF06}] O sistema deve permitir que o usuário compartilhe a sua grade horária finalizada. 
-%     \item[\textbf{RF07}] O sistema deve permitir que o usuário recupere uma grade horária montada a partir de um link compartilhado.
-%     % requisitos funcionais da avaliação das disciplinas e professores
-%     \item[\textbf{RF08}] O sistema deve permitir que o usuário inicie uma sessão autenticada utilizando sua matrícula.
-%     \item[\textbf{RF09}] O sistema deve permitir que o usuário finalize uma sessão autenticada.
-%     \item[\textbf{RF10}] O sistema deve permitir que o usuário avalie uma disciplina já cursada pelo usuário.
-%     \item[\textbf{RF11}] O sistema deve permitir que o usuário avalie um professor de uma disciplina já cursada pelo usuário.
-%     \item[\textbf{RF12}] O sistema deve permitir que o usuário altere uma avaliação feita anteriormente. 
-%     % requisitos não-funcionais (usabilidade / portabilidade / recuperabilidade / segurança / eficiência)
-%     \item[\textbf{RNF1}] O sistema deve estar disponível publicamente aos alunos da universidade.
-%     \item[\textbf{RNF2}] O sistema deve funcionar em dispositíveis móveis.
-%     \item[\textbf{RNF3}] O sistema deve armazenar as avaliações de maneira anônima. 
-% \end{enumerate}

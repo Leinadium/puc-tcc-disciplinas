@@ -29,14 +29,14 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     \hline\caption{Caso de uso UC01}\endlastfoot
 
     \textbf{Objetivo} & Permitir que o sistema atualize as disciplinas no seu banco de dados, incluindo as eletivas.\tabularnewline\hline 
-    \textbf{Requisitos} & RF01 e RF10\tabularnewline\hline
+    \textbf{Requisitos} & RF01 e RF09\tabularnewline\hline
     \textbf{Atores} & Sistema\tabularnewline\hline
     \textbf{Pré condições} & Não se aplica\tabularnewline\hline
 
     \multirow{1}{*}{\textbf{Fluxo principal}} & [1] O sistema acessa o microhorário, coletando informações de todas as disciplinas.\tabularnewline\cline{2-2}
     & [2] O sistema trata e converte as informações para o modelo do banco.\textbf{[A1]}\tabularnewline\cline{2-2}
-    & [3] O sistema cria uma nova versão do banco, com as novas informações.\tabularnewline\cline{2-2}
-    & [4] O sistema remove a versão antiga do banco caso o passo 3 tenha sido executado com sucesso.\tabularnewline\cline{2-2}
+    & [3] O sistema remove as informações anteriores do banco.\tabularnewline\cline{2-2}
+    & [4] O sistema armazena as novas informações no banco.\tabularnewline\cline{2-2}
     & [5] O sistema atualiza a data e hora da última atualização do microhorário que aparece na interface.\tabularnewline\cline{2-2}
     & [6] O caso de uso é encerrado.
     \label{tab:uc01}
@@ -52,28 +52,23 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     \hline\endfoot
     \hline\caption{Caso de uso UC02}\endlastfoot
 
-    \textbf{Objetivo} & Permitir que o usuário cadastre seu histórico escolar ou outras informações no sistema para personalizar as recomendações.\tabularnewline\hline
-    \textbf{Requisitos} & RF02, RF04, RF08 e RF09\tabularnewline\hline
+    \textbf{Objetivo} & Permitir que o usuário cadastre seu histórico escolar no sistema para personalizar as recomendações.\tabularnewline\hline
+    \textbf{Requisitos} & RF02, RF04, RF08\tabularnewline\hline
     \textbf{Atores} & Usuário\tabularnewline\hline
-    \textbf{Pré condições} & O usuário seleciona a opção "Montar Grade Horária", e este não possui nenhuma informação pré-cadastrada.\tabularnewline\hline
+    \textbf{Pré condições} & O usuário seleciona a opção de cadastrar histórico.\tabularnewline\hline
 
-    \multirow{1}{*}{\textbf{Fluxo principal}} & [1] O sistema exibe uma tela solicitando o histórico escolar do aluno, e um botão de pular.\tabularnewline\cline{2-2}
+    \multirow{1}{*}{\textbf{Fluxo principal}} & [1] O sistema exibe uma tela sobreposta solicitando o histórico escolar do aluno.\tabularnewline\cline{2-2}
     & [2] O usuário submete o histórico escolar. \textbf{[A1]}\tabularnewline\cline{2-2}
-    & [3] O sistema armazena o histórico, curso atual, período atual e o currículo do aluno.\tabularnewline\cline{2-2}
-    & [4] O sistema exibe a tela de criação de grade horária.\tabularnewline\cline{2-2}
+    & [3] O sistema armazena o histórico e o currículo do aluno.\tabularnewline\cline{2-2}
+    & [4] O sistema exibe um texto de histórico cadastrado com sucesso. \textbf{[A2]}\tabularnewline\cline{2-2}
     & [5] O caso de uso é encerrado.\tabularnewline\hline
 
-    \multirow{1}{*}{\textbf{Fluxos Alternativos}} & \textbf{[A1] O usuário pressiona o botão de pular}\tabularnewline\cline{2-2}
-    & [1] O sistema exibe uma tela solicitando o curso atual, período atual, o currículo do aluno, um botão de pular e um botão de continuar.\tabularnewline\cline{2-2}
-    & [2] O usuário preenche o formulário e pressiona o botão de continuar. \textbf{[A2]}\tabularnewline\cline{2-2} 
-    & [3] O sistema armazena as informações fornecidas.\tabularnewline\cline{2-2}
-    & [4] O sistema exibe a tela de criação de grade horária.\tabularnewline\cline{2-2}
-    & [5] O caso de uso é encerrado.\tabularnewline\cline{2-2}
+    \multirow{1}{*}{\textbf{Fluxos Alternativos}} & \textbf{[A1] O usuário pressiona fora da tela de cadastro de histórico}\tabularnewline\cline{2-2}
+    & [1] O caso de uso é encerrado.\tabularnewline\cline{2-2}
 
-    & \textbf{[A2] O usuário pressiona o botão de pular}\tabularnewline\cline{2-2}
-    & [1] O sistema altera o funcionamento para recomendações genéricas.\tabularnewline\cline{2-2}
-    & [2] O sistema exibe a tela de criação de grade horária. \textbf{[A2]}\tabularnewline\cline{2-2} 
-    & [3] O caso de uso é encerrado. %% \tabularnewline\cline{2-2}
+    & \textbf{[A2] O sistema não consegue encontrar o currículo ou as disciplinas cursadas no currículo}\tabularnewline\cline{2-2}
+    & [1] O sistema exibe um texto de erro.\tabularnewline\cline{2-2}
+    & [2] O sistema volta para o passo 1 do fluxo principal. 
     \label{tab:uc02}
 \end{longtable}
 
@@ -87,12 +82,12 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     \hline\caption{Caso de uso UC03}\endlastfoot
 
     \textbf{Objetivo} & Permitir que o sistema recomende disciplinas para o usuário.\tabularnewline\hline 
-    \textbf{Requisitos} & RF01-06\tabularnewline\hline
+    \textbf{Requisitos} & RF01-06, RNF01-02\tabularnewline\hline
     \textbf{Atores} & Sistema\tabularnewline\hline
-    \textbf{Pré condições} & O usuário deve ter modificado a grade horária.\tabularnewline\hline
+    \textbf{Pré condições} & O usuário modificou a grade horária.\tabularnewline\hline
 
     \multirow{1}{*}{\textbf{Fluxo principal}} & [1] O sistema coleta as disciplinas e turmas já adicionadas no grade horária do usuário.\tabularnewline\cline{2-2}
-    & [2] O sistema recupera o histórico escolar do usuário do banco de dados, caso o usuário tenha submetido.\textbf{[A1]}\tabularnewline\cline{2-2}
+    & [2] O sistema recupera o histórico escolar do usuário do banco de dados, caso o usuário esteja autenticado e o tenha submetido.\textbf{[A1]}\tabularnewline\cline{2-2}
     & [3] O sistema utiliza o algoritmo para gerar recomendações de disciplinas para o usuário.\tabularnewline\cline{2-2}
     & [4] O sistema exibe as recomendações na interface do usuário\tabularnewline\cline{2-2}
     & [5] O caso de uso é encerrado.
@@ -122,8 +117,8 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     & [6] O caso de uso é encerrado.\tabularnewline\hline
 
     \multirow{1}{*}{\textbf{Fluxos Alternativos}} & \textbf{[A1] O sistema seleciona uma das disciplinas na sua grade horária}\tabularnewline\cline{2-2}
-    & [1] O sistema exibe informações da disciplina e turma selecionada, um botão de voltar e um botão de excluir.\tabularnewline\cline{2-2} 
-    & [2] O usuário seleciona o botão de excluir. \textbf{[A3]}\tabularnewline\cline{2-2} 
+    & [1] O sistema exibe um botão de informação e um botão de excluir.\tabularnewline\cline{2-2} 
+    & [2] O usuário seleciona o botão de excluir.\textbf{[A3]}\tabularnewline\cline{2-2} 
     & [3] O sistema remove a turma e disciplina da grade horária do usuário, e recalcula as disciplinas recomendadas. \tabularnewline\cline{2-2}
     & [4] O sistema volta para o passo 1 do fluxo principal. \tabularnewline\cline{2-2}
 
@@ -131,8 +126,8 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     & [1] O sistema altera a lista de disciplinas, filtrando de acordo com o texto do campo de pesquisa. \tabularnewline\cline{2-2}
     & [2] O sistema volta para o passo 1 do fluxo principal. \tabularnewline\cline{2-2}
 
-    & \textbf{[A3] O usuário pressiona o botão de voltar}\tabularnewline\cline{2-2}
-    & [1] O sistema volta para o passo 1 do fluxo principal. %% \tabularnewline\cline{2-2}
+    & \textbf{[A3] O usuário pressiona o botão de informação}\tabularnewline\cline{2-2}
+    & [1] O sistema volta para o passo 3 do fluxo principal. %% \tabularnewline\cline{2-2}
 
     \label{tab:uc04}
 \end{longtable}
@@ -147,13 +142,13 @@ A seguir estão as descrições dos casos de uso presentes na figura \ref{fig:di
     \hline\caption{Caso de uso UC05}\endlastfoot
 
     \textbf{Objetivo} & Permitir que o usuário avalie uma disciplina ou um professor.\tabularnewline\hline
-    \textbf{Requisitos} & RF03, RF16 e RF17\tabularnewline\hline
+    \textbf{Requisitos} & RF03, RF15 e RF16\tabularnewline\hline
     \textbf{Atores} & Usuário\tabularnewline\hline
     \textbf{Pré condições} & Não se aplica.\tabularnewline\hline
 
     \multirow{1}{*}{\textbf{Fluxo principal}} & [1] O sistema exibe uma lista de disciplinas e professores e um campo de texto para pesquisa.\tabularnewline\cline{2-2}
     & [2] O usuário seleciona uma disciplina. \textbf{[A1]} \textbf{[A2]}\tabularnewline\cline{2-2}
-    & [3] O sistema exibe uma tela para avaliar a disciplina em conteúdo e dificuldade, um botão de salvar e um botão de voltar.\tabularnewline\cline{2-2}
+    & [3] O sistema exibe uma tela para avaliar a disciplina, um botão de salvar e um botão de voltar.\tabularnewline\cline{2-2}
     & [4] O usuário avalia a disciplina e seleciona o botão de salvar. \textbf{[A3]}\tabularnewline\cline{2-2}
     & [5] O sistema armazena a avaliação do usuário.\tabularnewline\cline{2-2}
     & [6] O caso de uso é encerrado.\tabularnewline\hline
