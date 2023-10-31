@@ -5,7 +5,7 @@ Para satisfazer os requisitos e os casos de uso, foi necessário modelar os dado
 
 \section{Diagrama de entidades-relacionamento}
 
-A imagem \ref{fig:diagrama-classes} exibe o diagrama de entidades-relacionamento (ER), que descreve os dados no modelos de entidades (coisas de interesse) e seus relacionamentos. Este modelo segue a notação do Peter Chen \cite{peter-chen}. 
+A imagem \ref{fig:diagrama-classes} exibe o diagrama de entidades-relacionamento (ER), que descreve os dados no modelos de entidades (coisas de eresse) e seus relacionamentos. Este modelo segue a notação do Peter Chen \cite{peter-chen}. 
 
 \begin{figure}[ht]
     \begin{center}
@@ -49,11 +49,10 @@ Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela 
 
     cod-curriculo & Identificador do currículo. Exemplo: "eng19.1" & string & Sem restrição.\tabularnewline\hline
     cod-depto & Abreviação de três letras do departamento, conforme disponibilizado no microhorario. Exemplo: "ENG". & string & Três letras maiúsculas.\tabularnewline\hline
-    cod-disciplina & Código da disciplina. Exemplo: "INF1011". & string & Abreviação de um departamento (três letras maiúsculas) seguida de 4 números.\tabularnewline\hline
+    cod-disciplina & Código da disciplina. Exemplo: "INF1011". & string & Três letras maiúsculas (não necessariamente um departamento) seguidas de 4 números.\tabularnewline\hline
     cod-disc-depen & Códigos da disciplinas que fazem parte de um grupo de pré-requisitos de outra disciplina. & Array de strings & Mesmo do cod-disciplina.\tabularnewline\hline
     cod-disc-orig & Código da disciplina que possui algum pré-requisito. & string & Mesmo do cod-disciplina.\tabularnewline\hline
     cod-grade & Código da grade, gerado ao salvar uma nova grade. & string & 8 caracteres em formato base64.\tabularnewline\hline
-    cod-professor & Código do professor, gerado ao inserir o professor no sistema. & string & Sem restrição.\tabularnewline\hline
     cod-usuario & Código do usuário, representado por sua matrícula & int & 7 números.\tabularnewline\hline
     conteudo & Conteúdo codificado da grade horária, que é decodificado pela interface ao exibir. & string & Sem restrição.\tabularnewline\hline
     creditos & Quantidade de créditos da disciplina. & int & Valor entre 0 a 30.\tabularnewline\hline
@@ -73,7 +72,7 @@ Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela 
     nota-professor & Nota do professor avaliado. & int & Valor entre 1 e 5.\tabularnewline\hline
     quantidade & Quantidade de vagas disponíveis. & int & Valor maior que 0.\tabularnewline\hline
     semestre & Semestre recomendado para cursar a disciplina de acordo com o currículo. & int & Valor entre 1 e 10. Pode ser nulo.\tabularnewline\hline
-    shf & Flag de disciplina "Sem Horário Fixo". & boolean & Sem restrição.
+    shf & Quantidade de horas "Sem Horário Fixo" de uma disciplina. & int & Valor maior ou igual a zero. Pode ser nulo.
 
     \label{tab:dicionario-dados}
 \end{longtable}
