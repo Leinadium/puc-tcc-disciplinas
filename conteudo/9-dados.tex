@@ -36,7 +36,7 @@ Nele está representado todas as colunas observadas no diagrama lógico da figur
 O tipo do dado é unico para o nome da coluna, o que significa que o mesmo nome da coluna em duas tabelas diferentes representa o mesmo tipo de dado. 
 Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela \textit{grades}, \textit{usuarios}, \textit{avaliacoes-disciplina} e \textit{avaliacoes-professor}.
 
-\begin{longtable}{ | >{\raggedright}m{0.2\columnwidth} | >{\raggedright}m{0.4\columnwidth} | >{\raggedright}m{0.1\columnwidth} | >{\raggedright}m{0.2\columnwidth} | }
+\begin{longtable}{ | >{\raggedright}m{0.22\columnwidth} | >{\raggedright}m{0.38\columnwidth} | >{\raggedright}m{0.1\columnwidth} | >{\raggedright}m{0.2\columnwidth} | }
     
     \hline\textbf{Coluna} & \textbf{Descrição} & \textbf{Tipo} & \textbf{Domínio}\tabularnewline\hline\hline
     \endhead
@@ -47,32 +47,32 @@ Por exemplo, o tipo de dado na coluna \textit{cod-usuario} é o mesmo na tabela 
     % \hline\endfoot
     \hline\caption{Dicionário de dados}\endlastfoot
 
-    cod-curriculo & Identificador do currículo. Exemplo: "eng19.1" & string & Sem restrição.\tabularnewline\hline
-    cod-depto & Abreviação de três letras do departamento, conforme disponibilizado no microhorario. Exemplo: "ENG". & string & Três letras maiúsculas.\tabularnewline\hline
-    cod-disciplina & Código da disciplina. Exemplo: "INF1011". & string & Três letras maiúsculas (não necessariamente um departamento) seguidas de 4 números.\tabularnewline\hline
-    cod-disc-depen & Códigos da disciplinas que fazem parte de um grupo de pré-requisitos de outra disciplina. & Array de strings & Mesmo do cod-disciplina.\tabularnewline\hline
-    cod-disc-orig & Código da disciplina que possui algum pré-requisito. & string & Mesmo do cod-disciplina.\tabularnewline\hline
-    cod-grade & Código da grade, gerado ao salvar uma nova grade. & string & 8 caracteres em formato base64.\tabularnewline\hline
-    cod-usuario & Código do usuário, representado por sua matrícula & int & 7 números.\tabularnewline\hline
+    cod\textunderscore curriculo & Identificador do currículo. Exemplo: "CEGBCO20180" & string & Sem restrição.\tabularnewline\hline
+    cod\textunderscore depto & Abreviação de três letras do departamento, conforme disponibilizado no microhorario. Exemplo: "ENG". & string & Três letras maiúsculas.\tabularnewline\hline
+    cod\textunderscore disciplina & Código da disciplina. Exemplo: "INF1011". & string & Três letras maiúsculas (não necessariamente um departamento) seguidas de 4 números.\tabularnewline\hline
+    cod\textunderscore disc\textunderscore depen & Códigos da disciplinas que fazem parte de um grupo de pré-requisitos de outra disciplina. & Array de strings & Mesmo do cod-disciplina.\tabularnewline\hline
+    cod\textunderscore disc\textunderscore orig & Código da disciplina que possui algum pré-requisito. & string & Mesmo do cod-disciplina.\tabularnewline\hline
+    cod\textunderscore grade & Código da grade, gerado ao salvar uma nova grade. & string & 8 caracteres em formato base64.\tabularnewline\hline
+    cod\textunderscore turma & Código da turma. & string & 3 caracteres.\tabularnewline\hline
+    cod\textunderscore usuario & Código do usuário, representado por sua matrícula & string & 7 números.\tabularnewline\hline
     conteudo & Conteúdo codificado da grade horária, que é decodificado pela interface ao exibir. & string & Sem restrição.\tabularnewline\hline
     creditos & Quantidade de créditos da disciplina. & int & Valor entre 0 a 30.\tabularnewline\hline
-    data-avaliacao & Data em que a avaliação foi efetuada pelo aluno. & date & Sem restrição. Pode ser nulo.\tabularnewline\hline
-    dia & Dia da semana que a turma é oferecida & string & "seg", "ter", "qua", "qui", "sex" ou "sab".\tabularnewline\hline
+    data\textunderscore avaliacao & Data em que a avaliação foi efetuada pelo aluno. & date & Sem restrição. Pode ser nulo.\tabularnewline\hline
+    dia & Dia da semana que a turma é oferecida & string & "SEG", "TER", "QUA", "QUI", "SEX", "SAB" ou "xxx" (sem dia definido).\tabularnewline\hline
     destino & Destino das vagas disponíveis. Exemplo: "QQC" (Qualquer curso), "BCO" (Bacharelado em Engenharia de Computação), entre outros. & string & Três letras maiúsculas. Pode ser nulo.\tabularnewline\hline
     ementa & Ementa da disciplina. & string & Sem restrição. Pode ser nulo.\tabularnewline\hline
-    hora-fim & Hora do fim da aula da turma & int & Valor entre 9 e 23, deve ser maior que hora-inicio.\tabularnewline\hline
-    hora-inicio & Hora do inicio da aula da turma & int & Valor entre 7 e 21.\tabularnewline\hline
-    nome-curriculo & Nome curto do currículo. Exemplo: "Engenharia | 19.0". & string & Sem restrição.\tabularnewline\hline
-    nome-depto & Nome do departamento, conforme disponibilizado no microhorario. Exemplo: "Engenharia". & string & Sem restrição.\tabularnewline\hline
-    nome-disciplina & Nome da disciplina. Exemplo: "Semântica de Linguagens". & string & Sem restrição.\tabularnewline\hline
-    nome-professor & Nome do professor, conforme disponibilizado no microhorário & string & Sem restrição.\tabularnewline\hline
-    nome-usuario & Nome do usuário & string & Sem restrição.\tabularnewline\hline
-    nota-avaliacao & Nota da categoria \textit{avaliação} da disciplina avaliada. & int & Valor entre 1 e 5.\tabularnewline\hline
-    nota-conteudo & Nota da categoria \textit{conteúdo} da disciplina avaliada. & int & Valor entre 1 e 5.\tabularnewline\hline
-    nota-professor & Nota do professor avaliado. & int & Valor entre 1 e 5.\tabularnewline\hline
-    quantidade & Quantidade de vagas disponíveis. & int & Valor maior que 0.\tabularnewline\hline
+    grau & Grau do aluno na disciplina. & int & Entre 0 a 100. Pode ser nulo.\tabularnewline\hline
+    grupo\textunderscore prereq & Um identificador do grupo do pré-requisito. Um aluno só pode cursar a disciplina se todas as disciplinas do mesmo grupo foram cursadas. & int & Sem restrição.\tabularnewline\hline
+    hora\textunderscore fim & Hora do fim da aula da turma & int & Valor entre 9 e 23, deve ser maior que hora-inicio. Pode ser nulo (sem hora de fim).\tabularnewline\hline
+    hora\textunderscore inicio & Hora do inicio da aula da turma & int & Valor entre 7 e 21, ou 0 (sem hora de início).\tabularnewline\hline
+    nome\textunderscore curriculo & Nome curto do currículo. Exemplo: "Engenharia | 19.0". & string & Sem restrição.\tabularnewline\hline
+    nome\textunderscore depto & Nome do departamento, conforme disponibilizado no microhorario. Exemplo: "Engenharia". & string & Sem restrição.\tabularnewline\hline
+    nome\textunderscore disciplina & Nome da disciplina. Exemplo: "Semântica de Linguagens". & string & Sem restrição.\tabularnewline\hline
+    nome\textunderscore professor & Nome do professor, conforme disponibilizado no microhorário & string & Sem restrição.\tabularnewline\hline
+    nome\textunderscore usuario & Nome do usuário & string & Sem restrição.\tabularnewline\hline
+    nota\textunderscore avaliacao & Nota da disciplina ou professor avaliado. & int & Valor entre 1 e 5.\tabularnewline\hline
     semestre & Semestre recomendado para cursar a disciplina de acordo com o currículo. & int & Valor entre 1 e 10. Pode ser nulo.\tabularnewline\hline
-    shf & Quantidade de horas "Sem Horário Fixo" de uma disciplina. & int & Valor maior ou igual a zero. Pode ser nulo.
-
+    shf & Quantidade de horas "Sem Horário Fixo" de uma disciplina. & int & Valor maior ou igual a zero. Pode ser nulo.\tabularnewline\hline
+    vagas & Quantidade de vagas disponíveis. & int & Valor maior que 0.
     \label{tab:dicionario-dados}
 \end{longtable}
