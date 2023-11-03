@@ -61,8 +61,8 @@ O valor $V_c[d,u]$ indica o quão relevante é a disciplina para o aluno de acor
 \label{equ:algoritmo-conteudo}
     V_c[d,u] = 
     \begin{dcases}
-        1.0,                                \: d \in Historico[u] \\ 
-        |A_{cursou}[d,u]| \,/\, |A_{curriculo}[u]|, \: \text{caso contrário}
+        1.0                                                        ,\: d \in Historico[u] \\ 
+        \frac{|\, A_{cursou}[d,u] \,|}{|\,  A_{curriculo}[u] \,|}   ,\: \text{caso contrário}
     \end{dcases}
 \end{equation}
 
