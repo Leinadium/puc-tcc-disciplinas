@@ -46,27 +46,94 @@ Python que permite baixar todos as informações disponíveis no microhorário, 
 O algoritmo busca satisfazer as necessidades apresentadas na tabela \ref{tab:entrevista-criterios-peso}. As entrevistas indicaram a importância de cinco categorias (Conteúdo, Professor, Avaliação, Horário e Opinião). Por isso, o algoritmo foi dividido nessas cinco categorias.
 
 O algoritmo se baseia num valor $V[d,u]$ atribuído a cada disciplina, que indica a relevância da disciplina $d$ para o usuário $u$. O valor $V[d,u] \in [0, 1]$,
-sendo 1 o maior grau de relevância da disciplina, e 0 o menor. O cálculo de $V$ é uma média ponderada, conforme a equação \ref{equ:algoritmo-valor}
+sendo 1 o maior grau de relevância da disciplina, e 0 o menor. O cálculo de $V$ é uma média ponderada, conforme a equação \ref{equ:algoritmo-valor}.
 
-\begin{equation}
+\begin{multline}
 \label{equ:algoritmo-valor}
-    V[d,u] = P_cV_c[d,u] + P_pV_p[d,u] + P_aV_a[d,u] + P_hV_h[d,u] + P_oV_o[d,u]
-\end{equation}
+    V[d,u] = \\
+        P_cV_c[d,u] + P_pV_p[d] + P_oV_o[d] + P_hV_h[d,u] + P_aV_a[d]
+\end{multline}
 
-Onde $d$ é uma disciplina, $u$ é um usuário, $P_x[d,u]$ é o valor de uma das cinco categorias para a disciplina $d$ e o usuário $u$, e $P_x$ é o peso de uma das cinco categorias.
+Em que $d$ é uma disciplina, $u$ é um usuário, $P_x$ é o valor de uma das cinco categorias para a disciplina $d$ e o usuário $u$, e $P_x$ é o peso de uma das cinco categorias.
 
-O valor $V_c[d,u]$ indica o quão relevante é a disciplina para o aluno de acordo com o seu conteúdo. Para isso, o valor é calculado de acordo com o histórico de outros alunos e com o currículo do aluno, conforme a equação \ref{equ:algoritmo-conteudo}:
+%% valor V_c
+
+O valor $V_c[d,u]$ indica o quão relevante é a disciplina para o usuário de acordo com o seu conteúdo. Para isso, o valor é calculado de acordo com o histórico de outros alunos e com o currículo do aluno, conforme a equação \ref{equ:algoritmo-conteudo}.
 
 \begin{equation}
-\label{equ:algoritmo-conteudo}
     V_c[d,u] = 
     \begin{dcases}
         \hfil 1.0 & \text{caso} \: d \in Historico[u] \\ 
-        \frac{|\, A_{cursou}[d,u] \,|}{|\,  A_{curriculo}[u] \,|}   & \text{caso contrário}
-    \end{dcases}
+        \frac{|\, A_{cursou}[d,u] \,|}{|\,  A_{curriculo}[u] \,|}   & \text{caso} \: A_{curriculo}[u] > 0 \\
+        0 & \text{caso contrário}
+    \end{dcases} \\[20pt]
+    \label{equ:algoritmo-conteudo}
 \end{equation}
 
-Em que $A_{cursou}[d,u]$ representa o conjunto de alunos do mesmo currículo que o usuário $u$ que cursaram a disciplina $d$, e $A_{curriculo}[u]$ representa o conjunto de todos os alunos do mesmo currículo do usuário $u$. Em resumo, o valor $V_c[d,u]$ é o valor máximo caso a disciplina deve ser cursada pelo usuário, ou sendo uma eletiva é a proporção de alunos do mesmo currículo que fizeram esta disciplina. Essa proporção indica se o conteúdo é relevante para alunos semelhantes ao usuário.
+Em que:
+
+\begin{align*}
+    & A_{curriculo}[u] = \forall a \in Alunos \,|\, Curriculo[a] = Curriculo[u] \\
+    & A_{cursou}[d,u] = \forall a \in A_{curriculo}[u] \,|\, d \in Cursadas[a] \\
+\end{align*}
+
+Em que $d$ é uma disciplina, $u$ é um usuário, $Alunos$ é o conjunto de todos os usuários cadastrados no sistema, $Curriculo[u]$ é o currículo do usuário $u$, e $Cursadas[u]$ é o conjunto de disciplinas que o aluno $u$ cursou. Em resumo, o valor $V_c[d,u]$ é o valor máximo caso a disciplina deve ser cursada pelo usuário, ou sendo uma eletiva é a proporção de alunos do mesmo currículo que fizeram esta disciplina. Essa proporção indica se o conteúdo é relevante para alunos semelhantes ao usuário.
+
+%% Valor V_p
+
+O valor $V_p[d]$ indica o quão relevante é a disciplina para o usuário de acordo com o professor. Para isso, o valor é calculado de acordo com as avaliações dos professores das turmas das disciplinas, conforme a equação \ref{equ:algoritmo-professor}.
+
+\begin{equation}
+    V_p[d] = \frac{\sum_{p \in P[d]} \displaystyle  \frac{\sum_{a \in Avs[p]} a}{| Avs[p] |}}{| P[d] |} \,/\, 5
+    \label{equ:algoritmo-professor}
+\end{equation}
+
+Em que $d$ é uma disciplina, $P[d]$ é o conjunto dos professores que lecionam a disciplina $d$, e $Avs[p]$ representa o conjunto das avaliações dos usuários do professor $p$. Em resumo, o valor $V_p[d,u]$ é a média das avaliações de todos os professores que estão lecionando a disciplina, com o valor entre $0$ e $1$.
+
+%% Valor V_o
+
+O valor $V_o[d]$ indica o quão relevante é a disciplina para o usuário de acordo com a opinião dos alunos. A equação é semelhante ao cálculo apresentado na equação \ref{equ:algoritmo-professor}. Porém, nesse caso, é levado em conta a média das avaliações das próprias disciplinas, conforme a equação \ref{equ:algoritmo-opiniao}.
+
+\begin{equation}
+    V_p[d] = \frac{\sum_{a \in Op[d]} a} {| Op[d] |} \,/\, 5
+    \label{equ:algoritmo-opiniao}
+\end{equation}
+
+Em que $d$ é uma disciplina, e $Op[d]$ é o conjunto das avaliações dos usuários da disciplina $d$.
+
+%% Valor V_h
+
+O valor $V_h[d,u]$ indica o quão relevante é a disciplina para o aluno de acordo com o horário. Para isso, o valor é calculado de acordo com os horários ocupados na grade do usuário e os horários das disciplinas, conforme a equação \ref{equ:algoritmo-horario}
+
+\begin{equation}
+    V_h[d,u] = 
+    \begin{dcases}
+        \frac{|\, T_{possiveis}[d,u] \,|}{|\,  T[d] \,|}   & \text{caso} \: T[d] > 0 \\
+        \hfil 0 & \text{caso contrário}
+    \end{dcases} \\[20pt]
+    \label{equ:algoritmo-horario}
+\end{equation}
+
+Em que $d$ é uma disciplina, $u$ é um usuário, $T_{possiveis}[d,u]$ é o conjunto de turmas da disciplina $d$ que se encaixam na grade do usuário $u$, e $T[d]$ é a quantidade de turmas da disciplina $d$. Em resumo, $V_h[d, u]$ é a porcentagem de turmas da disciplina que se encaixam na grade do usuário.
+
+Por último, o valor $V_a[d]$ indica o quão relevante é a disciplina para o aluno de acordo com os graus (a nota final, considerando as provas do aluno durante o semestre) da disciplina. O cálculo é semelhante às equações \ref{equ:algoritmo-professor} e \ref{equ:algoritmo-opiniao}, conforme a equação \ref{equ:algoritmo-avaliacao}.
+
+\begin{equation}
+    V_p[d] = \frac{\sum_{g \in Graus[d]} g} {| Graus[d] |} \,/\, 100 
+    \label{equ:algoritmo-avaliacao}
+\end{equation}
+
+Em que $d$ é uma disciplina e $Graus[d]$ é o conjunto das notas da disciplina $d$.
+
+Por fim, os pesos $P_x$ da média ponderada foram baseados na tabela \ref{tab:entrevista-criterios-peso}. Cada peso é a soma dos pesos dos critérios, de acordo com as equações a seguir.
+
+\begin{align}
+    & P_c = \frac{41}{41 + 19 + 8 + 28 + 21} \\[10pt]
+    & P_p = \frac{28}{41 + 19 + 8 + 28 + 21} \\[10pt]
+    & P_o = \frac{ 8}{41 + 19 + 8 + 28 + 21} \\[10pt]
+    & P_h = \frac{19}{41 + 19 + 8 + 28 + 21} \\[10pt]
+    & P_a = \frac{21}{41 + 19 + 8 + 28 + 21}
+\end{align}
 
 %% TODO: outras categorias
 
