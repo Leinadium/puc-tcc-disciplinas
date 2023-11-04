@@ -5,9 +5,7 @@
 
 Para o armazenamento e consulta dos dados, foi utilizado o banco de dados relacional PostgreSQL \cite{site-postgresql}. O PostgreSQL foi escolhido por ser robusto e eficiente, mas fácil e rápido de configurar. 
 
-O sistema foi separado em interface e API (\textit{Application programming interface}, ou interface de programação da aplicação). Houve a possibilidade de criar o sistema utilizando uma tecnologia que integra a interface e a API, como o Django \cite{site-django}, para evitar a criação de dois serviços separados. Mas como a interface precisava ser bem complexa e interativa, a opção de \textit{templating} do Django não ia ser suficiente. Por isso, a interface foi desenvolvida em Svelte \cite{site-svelte}, um framework em JavaScript \cite{site-js} baseado em componentes, e a API foi desenvolvida com Gin \cite{site-gin}, um framework em Go. \cite{site-go}. A lógica do algoritmo foi implementada dentro do serviço da API.
-
-A coleta dos dados provenientes do Microhorario e a autenticação com o sistema acadêmico universitário foi desenvolvida em serviços menores, cada um com uma única funcionalidade, separados da API (microserviços). Ambos foram desenvolvidos utilizando o framework Flask \cite{site-flask}, utilizando a linguagem \cite{site-python}.
+O sistema foi separado em interface e API (\textit{Application programming interface}, ou interface de programação da aplicação). A coleta dos dados provenientes do Microhorario, a autenticação com o sistema acadêmico universitário e carga/processamento dos históricos foi desenvolvida em serviços menores uma única funcionalidade respecitvamente (microserviços). 
 
 A figura \ref{fig:diagrama-arquitetura} exibe um diagrama da arquitetura do sistema.
 % Cada um dos componentes serão explicados nas próximas secções do capítulo.
@@ -39,7 +37,7 @@ Os dados do currículo foram transformados manualmente em um arquivo no formato 
 
 Os dados provenientes das disciplinas e turmas são coletados diretamente através do microhorário. Existe uma biblioteca  
 \footnote{Dispon\'ivel em: \url{https://pypi.org/project/microhorario-dl/}}
-Python que permite baixar todos as informações disponíveis no microhorário, e opcionalmente coletar as ementas e pré-requisitos que estão disponíveis em página. A biblioteca baixa os dados das disciplinas e turmas em menos de três segundos, mas para também baixar as ementas e pré-requisitos que estão em um outro serviço, a biblioteca demora cerca de 30 minutos. Portanto, foi criado um módulo, chamado \verb|microhorario|, que permite atualizar o banco com as informações básicas das disciplinas e turmas, mas que pode ser alterado para atualizar também as ementas e pré-requisitos. Esse módulo foi configurado de forma a ser executado na sua forma mais simples uma vez a cada hora, e executado na forma completa uma vez por semana.
+Python \cite{site-python} que permite baixar todos as informações disponíveis no microhorário, e opcionalmente coletar as ementas e pré-requisitos que estão disponíveis em página. A biblioteca baixa os dados das disciplinas e turmas em menos de três segundos, mas para também baixar as ementas e pré-requisitos que estão em um outro serviço, a biblioteca demora cerca de 30 minutos. Portanto, foi criado um módulo, chamado \verb|microhorario|, que permite atualizar o banco com as informações básicas das disciplinas e turmas, mas que pode ser alterado para atualizar também as ementas e pré-requisitos. Esse módulo foi configurado de forma a ser executado na sua forma mais simples uma vez a cada hora, e executado na forma completa uma vez por semana.
 
 \section{Definição e implementação do algoritmo}
 
@@ -125,6 +123,10 @@ Por último, o valor $V_a[d]$ indica o quão relevante é a disciplina para o al
 
 Em que $d$ é uma disciplina e $Graus[d]$ é o conjunto das notas da disciplina $d$.
 
+Para obter todos os valores dos conjuntos citados nas equações anteriores, foi criada uma consulta SQL que obtém todos os valores de uma só vez. O trecho de código \ref{cod:sql-algoritmo} contém a consulta por completo.
+
+\lstinputlisting[label=cod:sql-algoritmo,title={algoritmo.sql},caption={Consulta dos dados para o algoritmo},language=SQL]{codigo/10-algoritmo.sql}
+
 Por fim, os pesos $P_x$ da média ponderada foram baseados na tabela \ref{tab:entrevista-criterios-peso}. Cada peso é a soma dos pesos dos critérios, de acordo com as equações a seguir.
 
 \begin{align}
@@ -135,8 +137,30 @@ Por fim, os pesos $P_x$ da média ponderada foram baseados na tabela \ref{tab:en
     & P_a = \frac{21}{41 + 19 + 8 + 28 + 21}
 \end{align}
 
-%% TODO: outras categorias
-
 \section{Implementação da API}
 
+A API é responsável por servir disponibilizar à interface os dados de forma organizada e eficaz. Foi estudada a implementação da API em quatro possíveis frameworks em três diferentes linguagens:
+\textit{Django} \cite{site-django}, \textit{Flask} \cite{site-flask}, \textit{Gin} \cite{site-gin} e \textit{Rocket} \cite{site-rocket}. Cada um dos frameworks possui suas vantagens e desvantagens.
+
+O framework \textit{Django} é um \textit{Web Framework} completo, que possui múltiplas funcionalidades pré-configuradas, possui uma interface de comunicação com banco de dados bem robusta. O framework \textit{Flask} por sua vez não possui muitas funcionalidades imbutidas, e depende da instalação de pacotes externos para ampliar suas funcionalidades. Ambos os frameworks são desenvolvidos na linguagem Python, o que torna o desenvolvimento mais fácil, mas reduz performance do funcionamento, por ser uma linguagem interpretada.
+
+O framework \textit{Rocket} é desenvolvido na linguagem Rust \cite{site-rust}, conhecida por ser rápida e segura, por possuir um abordagem de manipulação de memória diferente de outras linguagens. Porém, Rust possui uma alta curva de aprendizado, dificultando o desenvolvimento do código.
+
+Por fim, o framework \textit{Gin} é desenvolvido na linguagem Go \cite{site-go}, conhecida por bem eficiente, útil para o desenvolvimento de APIs pelo sua capacidade de multiprocessamento, e fácil de usar. Por isso, esse framework foi escolhido para a API do sistema.
+
+%% TODO: REMOVER SE NAO FOR IMPLEMENTADO O SWAGGER
+<SE DER TEMPO DE IMPLEMENTAR O SWAGGER> A API disponibiliza a documentação completa de todas as suas rotas, com as respectivas entradas e saídas, na rota \verb|http://{endereco-api}/apidocs/|. 
+
+\section{Implementação dos microserviços}
+
+Os serviços de autenticação, e de carga e processamento dos históricos dos alunos são processos separados da API. Ambos foram desenvolvidos na linguagem Python, por sua facilidade de processamento dos dados, e por não haver a necessidade uma performance ótima. Esses utilizam o framework Flask para disponibilizar os serviços, por serem serviços bem simples.
+
+O serviço de autenticação se comunica com o sistema acadêmico universitário (SAU). Existe uma API para autenticação dos alunos da universidade, mas é restrita para os serviços interno da mesma. Por isso, o serviço de autenticação implementado simula um aluno autenticando-se no portal \footnote{Disponível em: \url{https://www.puc-rio.br/ensinopesq/academicas/}, Sistemas Acadêmicos - SAU} do SAU, e verifica se a autenticação foi efetuada com sucesso.
+
+O serviço de carga dos históricos precisa receber como entrada a página do histórico do usuário. É possível coletar o histórico de forma automática, acessando o portal do SAU também simulando um usuário. Porém, como essa interação com o SAU não seria transparente com o usuário, sendo executado de forma oculta, não era a melhor opção. Por isso, optou-se pelo usuário salvando uma cópia da página do seu histórico, e submtendo-o através da interface, que se comunica com o serviço de carga e processamento dos históricos. 
+
 \section{Implementação da interface}
+
+A interface foi implementada utilizando o framework \textit{Svelte}, que permite desenvolver páginas interativas baseadas em componentes. A programação é feita utilizando um misto de Javascript e HTML, que é compilada em pacotes Javascript pequenos que são interpretados pelo navegador de internet. 
+
+Como foi necessário desenvolver pelo menos três páginas diferentes, conforme o wireframe do capítulo \ref{cha:Wireframe}, foi utilizado o framework \textit{SvelteKit} \cite{site-sveltekit}. Este permite disponibilizar páginas desenvolvidas em Svelte em diferentes rotas, além de outras possibilidades, como SSR (\textit{Server-Side Rendering}, ou renderização no servidor), que permite reduzir o esforço do navegador do usuário ao construir inicialmente a página no servidor. 
