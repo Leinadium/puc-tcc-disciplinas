@@ -63,8 +63,7 @@ CREATE TABLE IF NOT EXISTS semestres (
     cod_curriculo VARCHAR(11) NOT NULL,
     semestre SMALLINT NOT NULL,
     PRIMARY KEY (cod_disciplina, cod_curriculo),
-    -- não é verdade: pode ser que não existe mais a disciplina do currículo, ou mudou o nome
-    -- FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_disciplina),
+    FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_disciplina),
     FOREIGN KEY (cod_curriculo) REFERENCES curriculos(cod_curriculo)
 );
 
@@ -88,9 +87,8 @@ CREATE TABLE IF NOT EXISTS historicos (
     semestre SMALLINT NOT NULL,
     grau SMALLINT,  -- a disciplina pode nao ter nota
     PRIMARY KEY (cod_usuario, cod_disciplina, semestre),
-    FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario)
-    -- sem foreign key para disciplinas,
-    -- pois pode ser que o usuário tenha cursado disciplinas que não estão mais no currículo
+    FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario),
+    FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_usuario)
 );
 
 CREATE TABLE IF NOT EXISTS avaliacoes_disciplinas (
@@ -100,7 +98,7 @@ CREATE TABLE IF NOT EXISTS avaliacoes_disciplinas (
     data_avaliacao DATE NOT NULL,
     PRIMARY KEY (cod_usuario, cod_disciplina),
     FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario)
-    -- FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_disciplina)
+    FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_disciplina)
 );
 
 
@@ -111,12 +109,13 @@ CREATE TABLE IF NOT EXISTS avaliacoes_professores (
     data_avaliacao DATE NOT NULL,
     PRIMARY KEY (cod_usuario, nome_professor),
     FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario)
-    -- FOREIGN KEY (nome_professor) REFERENCES professores(nome_professor)
+    FOREIGN KEY (nome_professor) REFERENCES professores(nome_professor)
 );
 
 
 CREATE TABLE IF NOT EXISTS modificacao (
-    data_ementa DATE NOT NULL,
-    data_geral  DATE NOT NULL,
-    PRIMARY KEY (data_ementa, data_geral)
+    data_ementa timestamptz NOT NULL,
+    data_geral  timestamptz NOT NULL,
+    modo_fallback boolean NOT NULL,
+    PRIMARY KEY (data_ementa, data_geral, modo_fallback)
 )
