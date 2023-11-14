@@ -11,4 +11,22 @@ Ao ter-se uma versão com todas os requisitos atendidos, o processo de testes co
     \item Ouvir o feedback do usuário.
 \end{enumerate}
 
-Os testes com os usuários não foram triviais. A interface do sistema ainda estava em desenvolvimento. Todas as funcionalidades estavam implementadas, mas não claramente especificadas e explicadas. Por isso, em um primeiro momento os usuários precisavam ser guiados cuidadosamente através da interface para interagir com as funcionalidades
+Os testes foram realizados durante o processo de desenvolvimento e aprimoramento da interface. Por isso, alguns testes foram prejudicados pela qualidade da interface, que possuia todas as funcionalidades previstas, mas não de forma clara.
+
+Foram entrevistados seis alunos do departamento de informática, três de engenharia de computação e três de ciência da computação. Cada aluno estava em um período diferente da sua trajetória, variando do sexto semestre do curso até mais de dez semestres.
+
+Os resultados foram satisfatórios. Todos aprovaram a ideia do algoritmo de recomendação, do sistema de auxílio à criação da grade horária e do sistema de avaliação de disciplinas e professores. A seguir estão algumas sugestões fornecidas pelos usuários após testarem o sistema que não foram modeladas como requisitos. Algumas das ideias foram implementadas posteriormente, enquanto outras serão implementadas em uma etapa futura.
+
+\begin{enumerate}
+    \item \textbf{Exibir quantas disciplinas curriculares são trancadas por uma disciplina}: Essa sugestão consiste em exibir a quantidade de disciplinas que uma disciplina bloqueia através dos seus pré-requisitos. Esse número poderia inclusive ser utilizado na fórmula de recomendação afetando $P_c$. Porém ela não foi implementado devido a complexidade do cálculo, que deve ser implementado de maneira recursiva e de preferência, pré-calculado durante o momento de inserção de novas disciplinas.
+    
+    \item \textbf{Mostrar a quantidade de créditos na grade sendo construída}: Essa sugestão consiste em mostrar a soma dos créditos das disciplinas das turmas selecionadas na grade. Essa sugestão, por sua facilidade de implementação, foi adicionada pouco tempo depois da entrevista. A quantidade de créditos pode ser visualizada acima do botão de salvar grade horária na interface final.
+    
+    \item \textbf{Exibir quais disciplinas já foram cursadas na lista lateral}: Essa sugestão consiste em diferenciar as disciplinas já cursadas na lista lateral. Essa sugestão foi julgada como importante, e como já havia uma rota na API que disponibiliza quais disciplinas já foram cursadas pelo aluno, esta sugestão foi implementada pouco tempo depois.
+
+    \item \textbf{Filtrar disciplinas por departamento}: Essa sugestão consiste em permitir filtrar as disciplinas na lista lateral pelos seus departamentos. O sistema atual armazena os departamentos das disciplinas, mas não os utiliza em nenhum lugar. Como essa sugestão envolve várias alterações na interface para permitir essa funcionalidade, essa sugestão será imeplementada em um momento futuro.
+    
+    \item \textbf{Exibir disciplinas não recorrentes}: Nem todas as disciplinas eletivas são oferecidas em todos os períodos. Essa sugestão consiste em exibir dos períodos oferecidos da disciplina, e destacá-la caso ela não tenha sido oferecida no último semestre. Como essa sugestão envolve uma reformulação geral das tabelas do banco de dados, das consultas à API e da interface, optou-se por não implementar essa sugestão nesse momento. 
+\end{enumerate}
+
+Foram feitas outras sugestões que envolviam pequenas alterações na interface que não afetavam o funcionamento do sistema ou algoritmo, que foram implementadas ou não de acordo com o nível de complexidade.
