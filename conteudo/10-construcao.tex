@@ -130,7 +130,7 @@ Por último, o valor $V_a[d]$ indica o quão relevante é a disciplina para o al
 
 Em que $d$ é uma disciplina e $Graus[d]$ é o conjunto das notas da disciplina $d$.
 
-Para obter todos os valores dos conjuntos citados nas equações anteriores, foi criada uma consulta SQL que obtém todos os valores de uma só vez. O trecho de código \ref{cod:sql-algoritmo} contém a consulta por completo.
+Para obter todos os valores dos conjuntos citados nas equações anteriores, foi criada uma consulta SQL que obtém todos os valores de uma só vez. O trecho de código \ref{cod:sql-algoritmo} contém a consulta por completo. Antes de executar, são substituidos os valores \verb|@usuario| pelo código do usuário, e o valor \verb|@escolhas| por um trecho de código SQL referente às escolhas de turmas de disciplinas na grade atual do aluno.
 
 \lstinputlisting[label=cod:sql-algoritmo,title={algoritmo.sql},caption={Consulta dos dados para o algoritmo},language=SQL]{codigo/10-algoritmo.sql}
 
