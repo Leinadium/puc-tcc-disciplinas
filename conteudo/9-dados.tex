@@ -3,21 +3,31 @@
 
 Para satisfazer os requisitos e os casos de uso, foi necessário modelar os dados disponíveis ao sistema e ao algoritmo.
 
-\section{Diagrama de entidades-relacionamento}
+\section{Diagrama de entidades e relacionamentos}
 
-A imagem \ref{fig:diagrama-classes} exibe o diagrama de entidades-relacionamento (ER), que descreve os dados no modelos de entidades (coisas de eresse) e seus relacionamentos. Este modelo segue a notação do Peter Chen \cite{peter-chen}. 
+O objeto central dos dados do sistema é a \textit{disciplina}. Uma disciplina tem alguns atributos, como código, nome, ementa e quantidade de créditos. Ela está contida em um \textit{currículo}, é oferecida por um \textit{departamento}, pode possuir como pré-requisito várias disciplinas, e pode possui algumas \textit{turmas}.
+
+Cada turma pode possuir horários \textit{horários}, pode conter várias \textit{vagas} disponíveis a um destino, e é lecionada por um \textit{professor}.
+
+Cada professor tem como atributo um nome, e pode possuir diversas \textit{avaliações} feitas por um \textit{usuário}.
+
+O usuário cursa um \textit{currículo}, pode ter cursado múltiplas \textit{disciplinas}, pode avaliar muitas \textit{disciplinas} e \textit{professores}, e pode possuir \textit{grades} montadas no sistema.
+
+Portanto, foram identificados nove entidades: \textbf{Disciplina}, \textbf{Departamento}, \textbf{Turma}, \textbf{Horário}, \textbf{Vagas}, \textbf{Professor}, \textbf{Usuário}, \textbf{Currículo} e \textbf{Grade}.
+
+A imagem \ref{fig:diagrama-classes} exibe o diagrama de entidades e relacionamentos (ER), que descreve os dados no modelos de entidades e seus relacionamentos com outras entidades. seguindo a notação de Peter Chen \cite{peter-chen}. 
 
 \begin{figure}[ht]
     \begin{center}
     \includegraphics[width=390pt]{figuras/diagrama-er-chen.png}
-    \caption{Diagrama do modelo entidade-relacionamento}
+    \caption{Diagrama do modelo de entidades e relacionamentos}
     \label{fig:diagrama-classes}
     \end{center}
 \end{figure}
 
 \section{Modelo lógico}
 
-A imagem \ref{fig:modelo-logico} exibe o diagrama lógico dos dados com base no modelo Entidade-Relacionamento. Ele representa a estrutura implementada no banco de dados, com suas tabelas e chaves primárias (PK) e chaves estrangeiras (FK).
+A imagem \ref{fig:modelo-logico} exibe o diagrama lógico dos dados com base no modelo de entidades e relacionamentos. Ele representa a estrutura implementada no banco de dados, com suas tabelas e chaves primárias (PK) e chaves estrangeiras (FK).
 
 \begin{figure}[ht]
     \begin{center}
