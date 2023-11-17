@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (1:1.2.2+202305151914+b0a8486541)"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
    sodipodi:docname="inkscape.svg"
    inkscape:export-filename="cronograma.png"
    inkscape:export-xdpi="250"
@@ -27,13 +27,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.8079686"
-     inkscape:cx="-575.68308"
-     inkscape:cy="466.7075"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:zoom="3.9710673"
+     inkscape:cx="-672.86697"
+     inkscape:cy="546.83032"
+     inkscape:window-width="2400"
+     inkscape:window-height="1261"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -543,5 +543,270 @@
        x="-139.46284"
        y="124.07146"
        ry="0.1943361" />
+    <path
+       style="fill:#5bd0f4;stroke:none;stroke-width:0.478631;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M -183.57034,145.59515 V 171.5837"
+       id="path346-3-4"
+       inkscape:export-filename="cronograma-atualizado.png"
+       inkscape:export-xdpi="250"
+       inkscape:export-ydpi="250" />
+    <path
+       style="fill:#5bd0f4;stroke:#000000;stroke-width:0.478631;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m -133.26001,172.06497 h -66.2672"
+       id="path346-6-5-0"
+       inkscape:export-filename="cronograma-atualizado.png"
+       inkscape:export-xdpi="250"
+       inkscape:export-ydpi="250" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.615838;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-6-8"
+       width="5.7124219"
+       height="2.7688327"
+       x="-183.08925"
+       y="147.26633"
+       ry="0.1943361" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.288908;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-193.98451"
+       y="148.1208"
+       id="text3289-2-9"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-193.98451"
+         y="148.1208"
+         id="tspan3374-9-4">Validação do </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-193.98451"
+         y="149.85545"
+         id="tspan3378-1-4">     problema</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.288908;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-185.37956"
+       y="158.23071"
+       id="text3289-9-9-0"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.37956"
+         y="158.23071"
+         id="tspan3464-6-8">   Elaboração</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.37956"
+         y="159.96536"
+         id="tspan1">de documentações</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.288908;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-185.24269"
+       y="163.26128"
+       id="text3289-9-9-0-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.24269"
+         y="163.26128"
+         id="tspan3378-8-3-6-5">   Desenvolvimento</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.24269"
+         y="164.99593"
+         id="tspan3464-6-8-3">do sistema</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.288908;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-185.30344"
+       y="153.17575"
+       id="text3289-9-9-3-8"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.30344"
+         y="153.17575"
+         id="tspan3464-6-0-1">   Elaboração</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:end;text-anchor:end;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-185.30344"
+         y="154.9104"
+         id="tspan947-8">dos requisitos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.288908;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-196.84073"
+       y="168.03029"
+       id="text3289-9-1-1-6-2"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-196.84073"
+         y="168.03029"
+         id="tspan3507-3-1-7"> Homologação do</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.38772px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.288908;stroke-opacity:1"
+         x="-196.84073"
+         y="169.76494"
+         id="tspan3550-8-2">              sistema</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84455;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-3-9-15-2"
+       width="13.223997"
+       height="2.4952605"
+       x="-172.03255"
+       y="152.37247"
+       ry="0.1751349"
+       inkscape:export-filename="cronograma-atualizado.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.512447;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-3-9-8"
+       width="5.8158236"
+       height="2.7056313"
+       x="-158.18747"
+       y="157.38712"
+       ry="0.18990016" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.84455;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-3-9-1-5"
+       width="10.226565"
+       height="2.5878892"
+       x="-183.09987"
+       y="147.35681"
+       ry="0.18163621" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-181.57401"
+       y="146.69785"
+       id="text3289-0-23-3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-181.57401"
+         y="146.69785"
+         id="tspan3378-6-7-0">Maio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-175.69968"
+       y="146.72917"
+       id="text3289-0-6-5-8"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-175.69968"
+         y="146.72917"
+         id="tspan3378-6-4-9-5">Junho</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-169.20412"
+       y="146.72917"
+       id="text3289-0-0-2-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-169.20412"
+         y="146.72917"
+         id="tspan3378-6-0-2-3">Julho</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-163.28757"
+       y="146.6889"
+       id="text3289-0-6-4-8-3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-163.28757"
+         y="146.6889"
+         id="tspan3378-6-4-6-9-1">Agosto</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-157.84538"
+       y="146.72917"
+       id="text3289-0-2-7-6"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-157.84538"
+         y="146.72917"
+         id="tspan3378-6-6-3-3">Setembro</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-151.36369"
+       y="146.72917"
+       id="text3289-0-6-7-6-6"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-151.36369"
+         y="146.72917"
+         id="tspan3378-6-4-5-1-3">Outubro</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-145.49768"
+       y="146.72917"
+       id="text3289-0-69-2-2"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-145.49768"
+         y="146.72917"
+         id="tspan3378-6-8-9-7">Novembro</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.232826;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       x="-139.27545"
+       y="146.72917"
+       id="text3289-0-6-72-3-7"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.11834px;font-family:'TeX Gyre Bonum';-inkscape-font-specification:'TeX Gyre Bonum, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.232826"
+         x="-139.27545"
+         y="146.72917"
+         id="tspan3378-6-4-8-1-7">Dezembro</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447022;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -177.15027,145.58937 v 26.04264"
+       id="path346-9-9-9" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -170.91017,145.58937 v 26.04264"
+       id="path346-9-2-4-1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -164.67009,145.58937 v 26.04264"
+       id="path346-9-7-7-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -158.42999,145.58937 v 26.04264"
+       id="path346-9-2-6-8-0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -152.1899,145.58937 v 26.04264"
+       id="path346-9-2-6-1-4-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -145.94982,145.58937 v 26.04264"
+       id="path346-9-2-6-3-5-6" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.149008;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:0.149008, 0.447024;stroke-dashoffset:0.298016;stroke-opacity:1"
+       d="m -139.70971,145.58937 v 26.04264"
+       id="path346-9-2-6-3-2-0-7" />
+    <path
+       style="fill:#5bd0f4;stroke:#000000;stroke-width:0.537895;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m -133.28964,145.60683 v 25.98321"
+       id="path346-1-3-2" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.847622;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-6-5-4"
+       width="11.810283"
+       height="2.5370481"
+       x="-145.60049"
+       y="167.14021"
+       ry="0.17806783" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.742085;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect1734-6-5-4-3"
+       width="8.6908493"
+       height="2.6425858"
+       x="-151.81805"
+       y="162.31842"
+       ry="0.1854752" />
   </g>
 </svg>
