@@ -3,7 +3,7 @@
 \chapter{Validação do problema}
 \label{cha:validacao-problema}
 
-A validação do problema foi efetuada por meio de entrevistas com alunos de graduação do Departamento de Informática. As entrevistas tinham como objetivo obter as opiniões de diferentes alunos em diferentes períodos de suas graduações quanto as suas preferências ao realizar as suas matrículas. As opiniões são essenciais para planejar um algoritmo de recomendação que abrange as preferênciasdo máximo de estudantes.
+A validação do problema foi efetuada por meio de entrevistas com alunos de graduação do Departamento de Informática. As entrevistas tinham como objetivo obter as opiniões de diferentes alunos em diferentes períodos de suas graduações quanto às suas preferências ao realizar as suas matrículas. As opiniões foram essenciais para planejar um algoritmo de recomendação que abrange as preferências do máximo de estudantes.
 
 \section{Método das entrevistas}
 
@@ -17,10 +17,10 @@ A seguir estão as seis perguntas realizadas para cada entrevistado do Departame
         
         %% \textit{"Eu sou aluno de engenharia de computação, atualmente no sétimo período."}
     
-    \item \textbf{Em média quantos créditos você faz num semestre?} A quantidade de créditos por semestre é relevante para que o algoritmo de recomendação tenha um conhecimento da média de disciplinas selecionadas por período. Essa média pode ser usada pelo algoritmo para saber quantas disciplinas o estudante ainda pretende fazer naquele semestre e recomendar de acordo.
+    \item \textbf{Em média quantos créditos você faz num semestre?} A quantidade de créditos por semestre é relevante para que o algoritmo de recomendação tenha um conhecimento da média de disciplinas selecionadas por período. 
         %% \textit{"Nos últimos semestres eu tenho feito o limite máximo de 30 créditos, mas antes eu fazia uma média de 22 ou 24 créditos."}
     
-    \item \textbf{Você se prepara com anteced\^encia para sua matr\'icula? Se sim, com quanta anteced\^encia? Se não, por quê?} Essa pergunta é fundamental para planejar uma expectativa de utilização da ferramenta de recomendação de disciplinas, pois a ferramenta com o algoritmo estaria disponibilizada em um sistema cujo obtivo é planejar a sua matr\'icula.
+    \item \textbf{Você se prepara com anteced\^encia para sua matr\'icula? Se sim, com quanta anteced\^encia? Se não, por quê?} Essa pergunta é fundamental para planejar uma expectativa de utilização da ferramenta de recomendação de disciplinas.
     
         %% \textit{"Sim, eu me prepararo assim que os horários das disciplinas são atualizados no microhorário. Normalmente dois dias antes da minha matrícula, eu já tenho algumas escolhas reservadas."}
     
@@ -33,7 +33,7 @@ A seguir estão as seis perguntas realizadas para cada entrevistado do Departame
         
         %% \textit{"Eu normalmente procuro pela listagem completa das disciplinas do departamento, oferecida através do microhorário. Também havia uma lista de disciplinas eletivas oferecidas no próximo período que era enviada por email, mas esta nunca mais foi enviada ou atualizada."}
 
-    \item \textbf{Você, pessoalmente, prefere disciplinas mais fáceis, mas que talvez não sejam muito úteis para a sua carreira, ou disciplinas mais relevantes mas que possam ser mais difíceis?} Essa pergunta pretende entender qual das duas opções é mais frequente. Caso a maioria dos estudantes preferem disciplinas mais fáceis, o algoritmo irá depender mais das notas dos alunos, e não tanto do conteúdo da disciplina em si. Caso a maioria dos estudantes preferem disciplinas mais relevantes, por exemplo.
+    \item \textbf{Você, pessoalmente, prefere disciplinas mais fáceis, mas que talvez não sejam muito úteis para a sua carreira, ou disciplinas mais relevantes mas que possam ser mais difíceis?} Essa pergunta pretende entender qual das duas opções é mais frequente. Caso a maioria dos estudantes preferem disciplinas mais fáceis, o algoritmo irá depender mais das notas dos alunos, e não tanto do conteúdo da disciplina em si. Caso a maioria dos estudantes preferem disciplinas mais relevantes, a nota pode não ser um valor tão relevante.
     
         %% RESPOSTA INSERIDA NA PROXIMA SECÇÃO:
         %% \textit{"Eu prefiro [disciplinas] eletivas mais fáceis, porque eu as vejo como uma oportunidade para facilitar a minha vida na faculdade, pois já tenho outras disciplinas mais difíceis para me preocupar. Eu encaro as [disciplinas] eletivas como um escape para poder respirar."}
@@ -44,10 +44,12 @@ Ao final da entrevista, também foi oferecida a oportunidade de fornecer alguma 
 
 \section{Resultados das entrevistas}
 
+As seis perguntas foram separadas em três grupos, cada grupo com duas perguntas: \textit{Dados básicos dos estudantes} (perguntas 1 e 2), \textit{Escolha de disciplinas} (perguntas 3 e 4) e \textit{Disciplinas eletivas} (perguntas 5 e 6). A seguir estão os resultados das perguntas, separados pelos respectivos grupos.
+
 \subsection{Dados básicos dos estudantes (Perguntas 1 e 2)}
 \label{sec:dados-basicos-estudantes}
 
-Dos onze entrevistados, cinco eram alunos de ciência de computação e os outros seis eram de engenharia de computação. 5 dos 6 alunos entrevistados de engenharia de computação já haviam cursado mais da metade do curso (já cursou 5 dos 10 semestres recomendados), e 3 dos 5 alunos entrevistados de ciência de computação já haviam cursado mais da metade do curso (já cursou 4 dos 8 semestres recomendados). Além disso, dos onze alunos, nove eram homens e dois eram mulheres.
+Dos onze entrevistados, cinco eram alunos de ciência de computação e os outros seis eram de engenharia de computação. cinco dos seis alunos entrevistados de engenharia de computação já haviam cursado mais da metade do curso (já cursaram 5 dos 10 semestres recomendados), e três dos cinco alunos entrevistados de ciência de computação já haviam cursado mais da metade do curso (já cursaram 4 dos 8 semestres recomendados). Além disso, dos onze alunos, nove eram homens e dois eram mulheres.
 
 A distribuição dos períodos atuais dos entrevistados pode ser visualizada na figura \ref{fig:entrevista-grafico}. 
 
@@ -66,9 +68,9 @@ A quantidade média de créditos por semestre dos alunos entrevistados é de 24 
 
 Dez dos onze entrevistados se preparam com antecedência para a matrícula. Três desses utilizam como base o repositório de disciplinas microhorário para buscar as informações das disciplinas oferecidas para o pŕoximo período, e também utilizam o microhorário para descobrir quais são as disciplinas eletivas disponibilizadas no período. Todos os dez entrevistados utilizam o simulador de matrícula para confirmar suas escolhas. Apenas um dos entrevistados não se prepara com antecedência, fazendo suas pesquisas e escolhas durante o período da própria matrícula. 
 
-Os critérios preferidos de cada aluno variam bastante. Por exemplo, um entrevisto citou que alguns critérios são  \textit{"a matéria em si, se ela é mais difícil de entender ou mais fácil, e também o método de avaliação, ou seja, se a nota final é composta de somente duas provas, ou se são vários trabalhos pequenos espalhados pelo semestre. Além disso, eu diria que o horário também é um limitador, porque não consigo ter aula sete da manhã todos os dias. Mas eu acho que o mais importante para mim é o professor: Se eu sei quem é o professor, sei que ele explica bem, vale a pena mesmo que a matéria seja mais difícil. Eu diria que a ordem dos critérios seria o professor, depois a matéria em si, depois o método de avaliação e por último o horário da disciplina."}.
+Os critérios preferidos de cada aluno variam bastante. Por exemplo, um entrevistado citou que alguns critérios são  \textit{"a matéria em si, se ela é mais difícil de entender ou mais fácil, e também o método de avaliação, ou seja, se a nota final é composta de somente duas provas, ou se são vários trabalhos pequenos espalhados pelo semestre. Além disso, eu diria que o horário também é um limitador, porque não consigo ter aula sete da manhã todos os dias. Mas eu acho que o mais importante para mim é o professor: Se eu sei quem é o professor, sei que ele explica bem, vale a pena mesmo que a matéria seja mais difícil. Eu diria que a ordem dos critérios seria o professor, depois a matéria em si, depois o método de avaliação e por último o horário da disciplina."}.
 
-Como pode ser observado na resposta fornecida acima, as respostas podem variar bastante de aluno para aluno. Por isso, os critérios de escolha de disciplinas ditos nas entrevistas foram agrupados em cinco grupos: (1) Conteúdo da disciplina; (2) Professor; (3) Método de avaliação; (4) Horário da disciplina e (5) Opinião de amigos. A tabela \ref{tab:entrevista-criterios-raw} com as respostas dos onze entrevistados e as suas respostas. O número indica em qual posição ficou aquele critério na ordem de preferência pessoal do aluno.
+Os critérios de escolha de disciplinas ditos nas entrevistas foram agrupados em cinco grupos: (1) Conteúdo da disciplina; (2) Professor; (3) Método de avaliação; (4) Horário da disciplina e (5) Opinião de amigos. A tabela \ref{tab:entrevista-criterios-raw} apresenta as respostas dos onze entrevistados e as suas respostas. O número indica em qual posição ficou aquele critério na ordem de preferência pessoal do aluno.
 
 \begin{table}[!ht]
     \begin{center}
@@ -95,14 +97,14 @@ Como pode ser observado na resposta fornecida acima, as respostas podem variar b
     \label{tab:entrevista-criterios-raw}
 \end{table}
 
-Para gerar uma comparação dos critérios, foi dado um peso para cada grau de importância de acordo com a tabela \ref{tab:grau-peso}.
+Para gerar uma comparação dos critérios, foi dado um peso para cada grau de importância. Quanto maior o grau de importância. A tabela \ref{tab:grau-peso} exibe a relação entre os graus de importância e os pesos. 
 
 \begin{table}[!ht]
     \begin{center}
-        \begin{tabular}{ r||c|c|c|c|c|c| } 
-            \textit{Grau} & 1 & 2 & 3 & 4 & 5 & - \\
+        \begin{tabular}{ r||c|c|c|c|c| } 
+            \textit{Grau} & 1 & 2 & 3 & 4 & - \\
             \hline 
-            \textit{Peso} & 5 & 4 & 3 & 2 & 1 & 0 \\
+            \textit{Peso} & 5 & 4 & 3 & 2 & 0 \\
         \end{tabular}
     \end{center}
     \caption{Relação de peso para grau dos critérios de escolhas}
@@ -144,4 +146,4 @@ Observando a Tabela \ref{tab:entrevista-criterios-peso}, as somas dos pesos indi
 
 Dos onze entrevistados, nove citaram a utilização do microhorário para coletar as disciplinas eletivas do período. Os outros dois dependem mais de recomendação de amigos. Três entrevistados procuram por uma listagem oficial de disciplinas eletivas oferecidas pelo departamento para o próximo período, mas nem sempre encontram essa listagem oficial.
 
-Por último, quatro entrevistados preferem disciplinas eletivas mais fáceis, enquanto três entrevistados preferem disciplinas eletivas que sejam mais relevantes para a sua formação. Os quatro restantes preferem um equilíbrio de facilidade e relevância. Dois entrevistados disseram que inicialmente escolhem disciplinas mais relevantes, mas que ao decorrer dos períodos optam por eletivas mais fáceis. Uma das respostas foi que \textit{"[Eu] prefiro [disciplinas] eletivas mais fáceis, porque eu as vejo como uma oportunidade para facilitar a minha vida na faculdade, pois já tenho outras disciplinas mais difíceis para me preocupar. Eu encaro as [disciplinas] eletivas como um escape para poder respirar."}
+Por último, quatro entrevistados preferem disciplinas eletivas mais fáceis, enquanto três entrevistados preferem disciplinas eletivas que sejam mais relevantes para a sua formação. Os quatro restantes preferem um equilíbrio entre facilidade e relevância. Dois entrevistados disseram que inicialmente escolhem disciplinas mais relevantes, mas que ao decorrer dos períodos optam por eletivas mais fáceis. Uma das respostas foi que \textit{"[Eu] prefiro [disciplinas] eletivas mais fáceis, porque eu as vejo como uma oportunidade para facilitar a minha vida na faculdade, pois já tenho outras disciplinas mais difíceis para me preocupar. Eu encaro as [disciplinas] eletivas como um escape para poder respirar."}
