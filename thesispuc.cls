@@ -278,7 +278,8 @@
     framexbottommargin=5pt,
     framextopmargin=5pt,
     %backgroundcolor=\color{lightgray},
-    showstringspaces=false
+    showstringspaces=false,
+    upquote=true,
 }
 \captionsetup[lstlisting]{format=listing,singlelinecheck=false, margin=0pt, font={normalsize},labelsep=space,labelfont=bf}
 

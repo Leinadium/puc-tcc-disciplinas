@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS disciplinas (
     cod_depto CHAR(3) NOT NULL,
     nome_disciplina TEXT NOT NULL,
     ementa TEXT,
-    creditos SMALLINT NOT NULL,
+    creditos SMALLINT NOT NULL CHECK (creditos >= 0 AND creditos <= 16),
     FOREIGN KEY (cod_depto) REFERENCES departamentos(cod_depto)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS horarios (
     cod_disciplina CHAR(7) NOT NULL,
     cod_turma CHAR(3) NOT NULL,
     dia CHAR(3) NOT NULL,
-    hora_inicio SMALLINT NOT NULL,
+    hora_inicio SMALLINT NOT NULL CHECK (hora_inicio = 0 OR (hora_inicio >= 7 AND hora_inicio <= 21)),
     hora_fim SMALLINT,
     PRIMARY KEY (cod_disciplina, cod_turma, dia, hora_inicio),
     FOREIGN KEY (cod_disciplina, cod_turma) REFERENCES turmas(cod_disciplina, cod_turma)
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS alocacoes (
     cod_disciplina CHAR(7) NOT NULL,
     cod_turma CHAR(3) NOT NULL,
     destino VARCHAR(80) NOT NULL,
-    vagas SMALLINT NOT NULL,
+    vagas SMALLINT NOT NULL CHECK (vagas >= 0),
     PRIMARY KEY (cod_disciplina, cod_turma, destino),
     FOREIGN KEY (cod_disciplina, cod_turma) REFERENCES turmas(cod_disciplina, cod_turma)
 );
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS curriculos (
 CREATE TABLE IF NOT EXISTS semestres (
     cod_disciplina CHAR(7) NOT NULL,
     cod_curriculo VARCHAR(11) NOT NULL,
-    semestre SMALLINT NOT NULL,
+    semestre SMALLINT CHECK (semestre >= 0 AND semestre <= 10),
     PRIMARY KEY (cod_disciplina, cod_curriculo),
     FOREIGN KEY (cod_disciplina) REFERENCES disciplinas(cod_disciplina),
     FOREIGN KEY (cod_curriculo) REFERENCES curriculos(cod_curriculo)
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS semestres (
 CREATE TABLE IF NOT EXISTS usuarios (
     cod_usuario CHAR(7) PRIMARY KEY,
     nome_usuario TEXT NOT NULL,
-    cod_curriculo VARCHAR(11),
+    cod_curriculo VARCHAR(11), -- inicialmente o usuario nao cadastrou o curriculo
     FOREIGN KEY (cod_curriculo) REFERENCES curriculos(cod_curriculo)
 );
 
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS historicos (
 CREATE TABLE IF NOT EXISTS avaliacoes_disciplinas (
     cod_usuario CHAR(7) NOT NULL,
     cod_disciplina CHAR(7) NOT NULL,
-    nota_avaliacao SMALLINT NOT NULL,
+    nota_avaliacao SMALLINT NOT NULL CHECK (nota_avaliacao >= 0 AND nota_avaliacao <= 5),
     data_avaliacao DATE NOT NULL,
     PRIMARY KEY (cod_usuario, cod_disciplina),
     FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario)
@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS avaliacoes_disciplinas (
 CREATE TABLE IF NOT EXISTS avaliacoes_professores (
     cod_usuario CHAR(7) NOT NULL,
     nome_professor TEXT NOT NULL,
-    nota_avaliacao SMALLINT NOT NULL,
+    nota_avaliacao SMALLINT NOT NULL CHECK (nota_avaliacao >= 0 AND nota_avaliacao <= 5),
     data_avaliacao DATE NOT NULL,
     PRIMARY KEY (cod_usuario, nome_professor),
     FOREIGN KEY (cod_usuario) REFERENCES usuarios(cod_usuario)
