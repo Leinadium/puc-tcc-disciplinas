@@ -15,9 +15,13 @@ O usuário cursa um \textit{currículo}, pode ter cursado múltiplas \textit{dis
 
 Portanto, foram identificados nove entidades: \textbf{Disciplina}, \textbf{Departamento}, \textbf{Turma}, \textbf{Horário}, \textbf{Vagas}, \textbf{Professor}, \textbf{Usuário}, \textbf{Currículo} e \textbf{Grade}.
 
-A figura \ref{fig:diagrama-classes} exibe o diagrama de entidades e relacionamentos (ER), que descreve os dados no modelos de entidades e seus relacionamentos com outras entidades. seguindo a notação de Peter Chen \cite{peter-chen}. 
+A figura \ref{fig:diagrama-classes} exibe o diagrama de entidades e relacionamentos (ER), que descreve os dados no modelos de entidades e seus relacionamentos com outras entidades.
 
-\begin{figure}[ht]
+Neste diagrama, um retângulo representa um entidade, e um retângulo com borda dupla representa uma entidade fraca, que é uma entidade que depende de outra para existir. Um losângulo representa um relacionamento entre duas entidades, e um losângulo com borda dupla representa um relacionamento de dependência de uma entidade fraca. Os atributos de um relacionamento são representados pelos círculos ovais. Um atributo que identifica uma entidade possui seu texto sublinhado. Um atributo que identifica uma entidade fraca (em conjunto com os atributos da entidade na qual depende para existir) tem seu texto com um sublinhado tracejado.
+
+Este diagrama segue a notação de Peter Chen \cite{peter-chen}. 
+
+\begin{figure}[ht!]
     \begin{center}
     \includegraphics[width=390pt]{figuras/diagrama-er-chen.png}
     \caption{Diagrama de entidades e relacionamentos}

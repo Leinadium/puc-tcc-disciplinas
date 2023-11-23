@@ -5,68 +5,16 @@ Afim de satisfazer todos os requisitos descritos no capítulo \ref{cha:Requisito
 
 Por não ter testes unitários ou de integração, o desenvolvimento precisou ser meticuloso. Por isso, optou-se por utilizar Typescript na interface, um superconjunto de Javascript, o que significa que suporta a sintaxe de Javascript e suas funcionalidades, mas introduz outras funcionalidades, que no caso são os tipos. Esses tipos permitem analisar o código em tempo de compilação, exibindo-os durante o processo de desenvolvimento, tornando o código mais resistente a falhas. Do mesmo modo, nos microserviços implementados em Python foram usados a sintaxe de tipos, pela mesma vantagem. Python é uma linguagem dinâmica em que os tipos não são necessários, mas foram utilizados para trazer mais segurança. Por último, a API foi implementada em Go, uma linguagem compilada \textit{fortemente tipada}, o que significa que todas as variáveis possuem um tipo específico.
 
-O trecho de código \ref{cod:sql-algoritmo} exibe a consulta ao banco para coletar os parâmetros de entrada do algoritmo. É possível observar que a consulta procura através das tabelas \verb|disciplinas| e \verb|turmas|, procura na tabela \verb|semestres| (que contém as disciplinas dos currículos), procura nas tabelas de avaliações, procura na tabela \verb|historicos| e utiliza-se de um filtro com as disciplinas e turmas já escolhidas pelo aluno, satisfazendo os requisitos RF01, RF02, RF03, RF04 e RF05. A fórmula matemática satisfaz o requisito RF06. Portanto, todos os requisitos funcionais do algoritmo foram satisfeitos. 
+\section{Cobertura dos requisitos}
+\label{sec:Cobertura dos requisitos}
 
-Como a implementação do algoritmo é um modelo matemático, pode-se observar que o requisito RNF2 (que determina que o algoritmo deve retornas os mesmos resultados para as mesmas entradas) é satisfeito. 
+Antes de verificar o funcionamento do sistema e do algoritmo, foi efetuada uma análise da cobertura do código. Essa análise possui como propósito verificar se cada requisito foi considerado durante o desenvolvimento. 
 
-Foram efetuados testes de performance para verificar se os requisitos RNF1 e RNF3 foram satisfeitos. A figura \ref{fig:teste-performance} representa um teste de performance, com 40 usuários simultâneos autenticados solicitando recomendações diferentes a cada 1-5 segundos. É possível observar que o tempo médio de resposta das recomendações foi 20 milisegundos, e não houve nenhuma falha no sistema ou algoritmo. O teste de performance foi desenvolvido usando o framework \textit{Locust} \cite{site-locust}, utilizando a linguagem Python.
+O trecho de código \ref{cod:sql-algoritmo} exibe a consulta ao banco para coletar os parâmetros de entrada do algoritmo. É possível observar que a consulta procura através das tabelas \verb|disciplinas| e \verb|turmas|, procura na tabela \verb|semestres| (que contém as disciplinas dos currículos), procura nas tabelas de avaliações, procura na tabela \verb|historicos| e utiliza-se de um filtro com as disciplinas e turmas já escolhidas pelo aluno, considerando os requisitos RF01, RF02, RF03, RF04 e RF05. A fórmula matemática considera o requisito RF06. Portanto, todos os requisitos funcionais do algoritmo foram considerados. 
 
-\begin{figure}[ht]
-    \begin{center}
-    \includegraphics[width=390pt]{figuras/teste-performance.png}
-    \caption{Teste de performance da recomendação}
-    \label{fig:teste-performance}
-    \end{center}
-\end{figure}
+Como a implementação do algoritmo é um modelo matemático, pode-se observar que o requisito RNF2 (que determina que o algoritmo deve retornar os mesmos resultados para as mesmas entradas) foi considerado. 
 
-Para satisfazer os requisitos do sistema, a interface e a API precisam agir de forma integrada. A lista abaixo contém os requisitos do sistema, o(s) componente(s) que os satisfazem, e a rota da API que é utilizada para alimentar a interface.
-
-% \begin{table}[!ht]
-%     \begin{center}
-%         \begin{tabular}{ | m{0.1\textwidth} | m{0.4\textwidth} | m{0.4\textwidth} | }
-%             \hline
-%             Requisito & Componente(s) da interface & Rota(s) da API\tabularnewline\hline\hline
-            
-%             \textbf{RF07} & 
-%             \verb|grade/+page.svelte| & 
-%             \textit{/pesquisa/info}, \textit{/pesquisa/podecursar}, \textit{/pesquisa/faltacursar}, \textit{pesquisa/cursadas} e \textit{/disciplinas/info}
-%             \tabularnewline\hline
-
-%             \textbf{RF08} & 
-%             \verb|HistoricoPopup.svelte| & 
-%             \verb|/historico|
-%             \tabularnewline\hline
-
-%             \textbf{RF09} & 
-%             Componentes em \verb|components/grade/turma| & 
-%             \verb|/disciplinas/info|
-%             \tabularnewline\hline
-
-%             \textbf{RF10-12} & 
-%             \verb|JanelaSalvar.svelte| e \verb|GrupoBotoes.svelte| & 
-%             \verb|/grade|
-%             \tabularnewline\hline
-
-%             \textbf{RF13-14} & 
-%             \verb|CheckLogin.svelte| e \verb|LoginPopup.svelte| & 
-%             \verb|/login| e \verb|/logout|
-%             \tabularnewline\hline
-
-%             \textbf{RF15} & 
-%             \verb|avaliacao/+page.svelte| & 
-%             \verb|/avaliacoes/|
-%             \tabularnewline\hline
-
-%             \textbf{RF16-18} & 
-%             \verb|CampoAvaliacao.svelte| & 
-%             \verb|/avaliacoes/disciplina| e \verb|/avaliacoes/professor| 
-%             \tabularnewline\hline
-%         \end{tabular}
-%     \end{center}
-%     \caption{Implementação dos requisitos do sistema}
-%     \label{tab:impl-sistema}
-% \end{table}
-
+A lista a seguir contém os requisitos do sistema, o(s) componente(s) que os consideram, e a rota da API que é utilizada para alimentar a interface.
 
 \begin{itemize}
     \item \textbf{RF07:} O sistema deve permitir que o usuário crie uma grade horária para o próximo período.
@@ -135,3 +83,27 @@ Para satisfazer os requisitos do sistema, a interface e a API precisam agir de f
         \item \textbf{API:} \verb|/avaliacoes/disciplina| 
     \end{itemize}
 \end{itemize}
+
+Os requisitos RF18 e RF19 foram implementados em um serviço diferente, executados periodicamente através da ferramenta \verb|cron| do sistema operacional \textit{Linux}. O serviço é um único script Python. Esse script acessa o microhorário e faz as alterações necessárias no banco de dados.
+
+\section{Testes da interface}
+\label{sec:Testes da interface}
+
+Após verificar que os requisitos foram cobertos durante a fase de desenvolvimento, os requisitos foram testados individualmente. Cada implementação dos requisitos foi testada manualmente com os diferentes tipos de entradas possíveis. 
+
+Por exemplo, o requisito RF10 (armazenamento de uma grade) foi testado com diversas grades diferentes, inclusive grades vazias, verificando se a grade era armazenada corretamente no banco de dados. E o requisito RF11 era testado verificando se o código da grade, gerado ao armazená-la no banco de dados, era corretamente fornecida para a interface. Os outros requisitos passaram por testes semelhantes.
+
+Como o código foi desenvolvido de forma a produzir a maioria dos erros em tempo de compilação e a partir de análises semânticas (por utilizar tipos em suas linguagens), não ocorreram muitos erros durante a etapa de testes manuais. Alguns outros poucos problemas simples foram encontrados durante a etapa de entrevistas e foram corrigidos prontamente.
+
+\section{Teste de performance}
+\label{sec:Performance}
+
+Foram efetuados testes de performance para verificar se os requisitos RNF1 e RNF3 foram considerados. A figura \ref{fig:teste-performance} representa um teste de performance, com 40 usuários simultâneos autenticados solicitando recomendações diferentes a cada 1-5 segundos. É possível observar que o tempo médio de resposta das recomendações foi 20 milisegundos, e não houve nenhuma falha no sistema ou algoritmo. O teste de performance foi desenvolvido usando o framework \textit{Locust} \cite{site-locust}, utilizando a linguagem Python.
+
+\begin{figure}[ht]
+    \begin{center}
+    \includegraphics[width=390pt]{figuras/teste-performance.png}
+    \caption{Teste de performance da recomendação}
+    \label{fig:teste-performance}
+    \end{center}
+\end{figure}
