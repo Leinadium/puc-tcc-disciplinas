@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS disciplinas (
     cod_depto CHAR(3) NOT NULL,
     nome_disciplina TEXT NOT NULL,
     ementa TEXT,
-    creditos SMALLINT NOT NULL CHECK (creditos >= 0 AND creditos <= 16),
+    creditos SMALLINT NOT NULL CHECK (creditos >= -1 AND creditos <= 16),
     FOREIGN KEY (cod_depto) REFERENCES departamentos(cod_depto)
 );
 
@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS alocacoes (
     cod_disciplina CHAR(7) NOT NULL,
     cod_turma CHAR(3) NOT NULL,
     destino VARCHAR(80) NOT NULL,
-    vagas SMALLINT NOT NULL CHECK (vagas >= 0),
+    vagas SMALLINT NOT NULL CHECK (vagas >= -1),
     PRIMARY KEY (cod_disciplina, cod_turma, destino),
     FOREIGN KEY (cod_disciplina, cod_turma) REFERENCES turmas(cod_disciplina, cod_turma)
 );
