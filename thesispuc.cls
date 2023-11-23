@@ -1241,7 +1241,7 @@
       \hspace*{.6cm}%
         \newcounter{keycount}\setcounter{keycount}{1}%
         %%% \renewcommand{\catalogprekey}[1]{\arabic{keycount}. ##1 -- Teses.\addtocounter{keycount}{1}\ }%
-        \renewcommand{\catalogprekey}[1]{\arabic{keycount}. ##1 -- Trabalho de Conclusão de Curso (Graduação).\addtocounter{keycount}{1}\ }%
+        \renewcommand{\catalogprekey}[1]{\arabic{keycount}. ##1 -- Trabalho de Conclusão de Curso \mbox{(Graduação)}.\addtocounter{keycount}{1}\ }%
         \puc@catalogprekeywords%
         \renewcommand{\key}[1]{\arabic{keycount}. ##1.\addtocounter{keycount}{1}\ }%
         \puc@keywords%
