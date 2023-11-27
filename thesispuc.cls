@@ -1560,12 +1560,12 @@
   \fi
   %% \puc@showacknowledgment%   %% ALTERACAO %%
   \if@brazilianlanguage
-    \puc@showabstractuk%        %% PRECISA MESMO? %%
     \puc@showabstract%
+    \puc@showabstractuk%        %% PRECISA MESMO? %%
     \selectlanguage{brazilian}%
   \else
-    \puc@showabstractuk%
     \puc@showabstract%
+    \puc@showabstractuk%
     \selectlanguage{american}%
   \fi
   \puc@showtables%
