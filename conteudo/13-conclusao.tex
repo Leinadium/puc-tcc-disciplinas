@@ -32,6 +32,13 @@ O projeto do sistema possui uma gama de possíveis estudos futuros. Em um primei
     \item \textbf{Estudar outros pesos}: Apesar das entrevistas revelarem cinco categorias de uma escolha de uma disciplina, essas podem não ser as melhores para modelar uma recomendação. Um estudo futuro pretende efetuar mais estrevistas, coletar mais informações e possivelmente adicionar ou remover pesos do algoritmo, de forma a otimizar a recomendação das disciplinas.
 \end{enumerate}
 
+Além dos pontos anteriores, existe um planejamento para adaptar o sistema para mais departamentos, ou até para a universidade inteira. O sistema foi desenvolvido de forma a facilitar essa futura adaptação, de forma que somente é necessário alterar as seguintes etapas do sistema:
+
+\begin{enumerate}
+    \item \textbf{Adicionar mais currículos}: O sistema possui uma grande dependência do currículo do aluno. Sem o currículo, o sistema não consegue determinar quais disciplinas faltam cursar, e o algoritmo não consegue obter alguns valores, como a quantidade de alunos do mesmo currículo que cursaram a disciplina. Por isso, é necessário criar inserir mais currículos. Para isso, basta construir mais arquivos SQL, seguindo a estrutura dos outros arquivos SQL de criação de \textit{Procedure}s dos outros arquivos de currículos de Engenharia e Ciência da Computação.
+    \item \textbf{Reavaliar os pesos}: Todos os alunos entrevistados cursavam cursos do Departamento de Informática, as respostas para cursos de outros departamentos podem ser diferentes. Portanto, será necessário realizar mais entrevistas com alunos de outros cursos, para determinar pesos mais gerais para as categorias do algoritmo.
+\end{enumerate}
+
 \section{Código completo}
 
 % \footnote{Dispon\'ivel em: \url{https://pypi.org/project/microhorario-dl/}}
